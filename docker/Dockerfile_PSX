@@ -1,0 +1,12 @@
+FROM ubuntu:18.04
+
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends \
+    	mame-tools zip unzip \
+    && mkdir -p /app \
+    && mkdir -p /app/zip \
+    && mkdir -p /app/chd
+
+COPY convert.sh /app/convert.sh
+
+WORKDIR /app

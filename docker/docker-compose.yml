@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+
+  # PSX Conversion from bin/cue to chd
+  prepare_psx:
+    build:
+      context: .
+      dockerfile: Dockerfile_PSX
+    image: dafrenchyman/EmuCleaning_PSX
+    command: /app/convert.sh
+    volumes:
+      - './PSX/zip:/app/zip'
+      - './PSX/chd:/app/chd'
