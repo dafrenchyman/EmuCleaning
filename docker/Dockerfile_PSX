@@ -7,6 +7,6 @@ RUN apt-get update \
     && mkdir -p /app/zip \
     && mkdir -p /app/chd
 
-COPY convert.sh /app/convert.sh
+COPY scripts/convert_psx.sh /app/convert_psx.sh
 
 WORKDIR /app
