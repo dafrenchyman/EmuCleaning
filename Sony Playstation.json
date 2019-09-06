@@ -6241,7 +6241,7 @@
     "votes":0,
     "isFavorite":0,
     "launchCount":0,
-	"thegamesdb_id":14137
+    "thegamesdb_id":14137
   },
   {
     "name":"Buggy",
@@ -9152,7 +9152,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":14158
   },
   {
     "name":"Courier Crisis",
@@ -9183,7 +9184,7 @@
     "thegamesdb_id":32850
   },
   {
-    "name":"Covert Ops - Nuclear Dawn  Disc 1",
+    "name":"Covert Ops - Nuclear Dawn - Disc 1",
     "full_name":"Covert Ops - Nuclear Dawn (USA) (Disc 1)",
     "year":"2000",
     "rating":"ESRB - M (Mature)",
@@ -9207,10 +9208,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":18882
   },
   {
-    "name":"Covert Ops - Nuclear Dawn  Disc 2",
+    "name":"Covert Ops - Nuclear Dawn - Disc 2",
     "full_name":"Covert Ops - Nuclear Dawn (USA) (Disc 2)",
     "year":"2000",
     "rating":"ESRB - M (Mature)",
@@ -9234,7 +9236,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":18882
   },
   {
     "name":"Crash Bandicoot - Warped",
@@ -9289,7 +9292,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":1006
   },
   {
     "name":"Crash Bandicoot 2 - Cortex Strikes Back",
@@ -9455,7 +9459,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":52900
   },
   {
     "name":"Crime Killer",
@@ -9510,7 +9515,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":18760
   },
   {
     "name":"Critical Depth",
@@ -10036,7 +10042,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12763
   },
   {
     "name":"D  Disc 2",
@@ -10063,7 +10070,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12763
   },
   {
     "name":"D  Disc 3",
@@ -10090,7 +10098,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12763
   },
   {
     "name":"Dalmatians 2",
@@ -10643,7 +10652,8 @@
     "version":1.1,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":21244
   },
   {
     "name":"David Beckham Soccer",
@@ -11834,7 +11844,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":1017
   },
   {
     "name":"Disney's Aladdin in Nasira's Revenge",
@@ -12304,7 +12315,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":44178
   },
   {
     "name":"Disruptor",
@@ -12495,7 +12507,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12927
   },
   {
     "name":"Dracula - The Last Sanctuary  Disc 2",
@@ -12522,7 +12535,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12927
   },
   {
     "name":"Dracula - The Resurrection  Disc 1",
@@ -12549,7 +12563,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12923
   },
   {
     "name":"Dracula - The Resurrection  Disc 2",
@@ -12576,7 +12591,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12923
   },
   {
     "name":"Dragon Ball GT - Final Bout",
@@ -12715,7 +12731,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12934
   },
   {
     "name":"Dragon Valor  Disc 2",
@@ -12742,7 +12759,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12934
   },
   {
     "name":"Dragon Warrior VII  Disc 1",
@@ -12769,7 +12787,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11041
   },
   {
     "name":"Dragon Warrior VII  Disc 2",
@@ -12796,7 +12815,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11041
   },
   {
     "name":"Dragonheart - Fire & Steel",
@@ -13872,7 +13892,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11699
   },
   {
     "name":"Evil Dead - Hail to the King  Disc 2",
@@ -13899,7 +13920,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11699
   },
   {
     "name":"Evil Zone",
@@ -14563,7 +14585,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":65000
   },
   {
     "name":"Family Games Compendium  Disc 2",
@@ -14590,7 +14613,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":65000
   },
   {
     "name":"Family Games Compendium  Disc 3",
@@ -14617,7 +14641,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":65000
   },
   {
     "name":"Fantastic Four",
@@ -14700,7 +14725,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11703
   },
   {
     "name":"Fear Effect  Disc 2",
@@ -14727,7 +14753,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11703
   },
   {
     "name":"Fear Effect  Disc 3",
@@ -14754,7 +14781,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11703
   },
   {
     "name":"Fear Effect  Disc 4",
@@ -14781,7 +14809,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11703
   },
   {
     "name":"Fear Effect 2 - Retro Helix  Disc 1",
@@ -14808,7 +14837,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11704
   },
   {
     "name":"Fear Effect 2 - Retro Helix  Disc 2",
@@ -14835,7 +14865,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11704
   },
   {
     "name":"Fear Effect 2 - Retro Helix  Disc 3",
@@ -14862,7 +14893,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11704
   },
   {
     "name":"Fear Effect 2 - Retro Helix  Disc 4",
@@ -14889,7 +14921,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11704
   },
   {
     "name":"Felony 11-79",
@@ -15717,7 +15750,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":525
   },
   {
     "name":"Final Fantasy VII  Disc 2",
@@ -15744,7 +15778,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":525
   },
   {
     "name":"Final Fantasy VII  Disc 3",
@@ -15771,7 +15806,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":525
   },
   {
     "name":"Final Fantasy VIII  Disc 1",
@@ -16570,7 +16606,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11707
   },
   {
     "name":"Fox Hunt  Disc 2",
@@ -16597,7 +16634,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11707
   },
   {
     "name":"Fox Hunt  Disc 3",
@@ -16624,7 +16662,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11707
   },
   {
     "name":"FOX Sports Golf '99",
@@ -17012,7 +17051,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":532
   },
   {
     "name":"G-Police  Disc 2",
@@ -17039,7 +17079,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":532
   },
   {
     "name":"G. Darius",
@@ -17178,7 +17219,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":531
   },
   {
     "name":"Galerians  Disc 2",
@@ -17205,7 +17247,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":531
   },
   {
     "name":"Galerians  Disc 3",
@@ -17232,7 +17275,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":531
   },
   {
     "name":"Gallop Racer",
@@ -18644,7 +18688,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13242
   },
   {
     "name":"Heart of Darkness  Disc 2",
@@ -18671,7 +18716,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13242
   },
   {
     "name":"Hebereke's Popoitto",
@@ -18863,7 +18909,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":32454
   },
   {
     "name":"Hidden & Dangerous",
@@ -19771,7 +19818,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13253
   },
   {
     "name":"In Cold Blood  Disc 2",
@@ -19798,7 +19846,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13253
   },
   {
     "name":"In the Hunt",
@@ -21878,7 +21927,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":66205
   },
   {
     "name":"King of Fighters '95, The",
@@ -22949,7 +22999,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":21246
   },
   {
     "name":"LEGO Racers",
@@ -23692,7 +23743,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12216
   },
   {
     "name":"Lunar - Silver Star Story Complete  Disc 2",
@@ -23719,7 +23771,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12216
   },
   {
     "name":"Lunar 2 - Eternal Blue Complete  Disc 1",
@@ -26769,7 +26822,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":30631
   },
   {
     "name":"Motorhead",
@@ -37744,7 +37798,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":522
   },
   {
     "name":"Sesame Street Sports",
@@ -37771,7 +37826,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13617
   },
   {
     "name":"Shadow Gunner - The Robot Wars",
@@ -37825,7 +37881,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11812
   },
   {
     "name":"Shadow Madness  Disc 2",
@@ -37852,7 +37909,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11812
   },
   {
     "name":"Shadow Man",
@@ -37933,7 +37991,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12650
   },
   {
     "name":"Shanghai - True Valor",
@@ -37960,7 +38019,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13616
   },
   {
     "name":"Shaolin",
@@ -37987,7 +38047,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":23835
   },
   {
     "name":"Sheep",
@@ -38014,7 +38075,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13615
   },
   {
     "name":"Shellshock",
@@ -38095,7 +38157,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":19488
   },
   {
     "name":"Shockwave Assault",
@@ -38122,7 +38185,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11818
   },
   {
     "name":"Shoot",
@@ -38176,7 +38240,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11603
   },
   {
     "name":"Silent Bomber",
@@ -38203,7 +38268,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":8915
   },
   {
     "name":"Silent Hill",
@@ -38230,7 +38296,8 @@
     "version":1.1,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":1014
   },
   {
     "name":"Silent Iron",
@@ -38284,7 +38351,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13611
   },
   {
     "name":"Silverload",
@@ -38311,7 +38379,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11819
   },
   {
     "name":"Sim Theme Park",
@@ -38338,7 +38407,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12236
   },
   {
     "name":"SimCity 2000",
@@ -38365,7 +38435,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":8348
   },
   {
     "name":"Simpsons, The - Wrestling",
@@ -38446,7 +38517,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":2950
   },
   {
     "name":"Ski Air Mix",
@@ -38500,7 +38572,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13610
   },
   {
     "name":"Sky Sports Football Quiz - Season 02",
@@ -38581,7 +38654,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13609
   },
   {
     "name":"Slam 'n Jam '96 Featuring Magic & Kareem",
@@ -38608,7 +38682,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13608
   },
   {
     "name":"Slamscape",
@@ -38635,7 +38710,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11821
   },
   {
     "name":"Sled Storm",
@@ -38662,7 +38738,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":608
   },
   {
     "name":"Slots",
@@ -38689,7 +38766,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13605
   },
   {
     "name":"Small Soldiers",
@@ -38716,7 +38794,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11604
   },
   {
     "name":"Smurf Racer!",
@@ -38743,7 +38822,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11602
   },
   {
     "name":"Smurfs, The",
@@ -38797,7 +38877,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":609
   },
   {
     "name":"Snow Racer 98",
@@ -38851,7 +38932,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13598
   },
   {
     "name":"Soccer '97",
@@ -38932,7 +39014,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13596
   },
   {
     "name":"Sonic Wings Special",
@@ -38986,7 +39069,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13595
   },
   {
     "name":"Soul Blade",
@@ -39013,7 +39097,8 @@
     "version":1.1,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9421
   },
   {
     "name":"Soul of the Samurai",
@@ -39040,7 +39125,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13594
   },
   {
     "name":"South Park - Chef's Luv Shack",
@@ -39067,7 +39153,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11605
   },
   {
     "name":"South Park",
@@ -39148,7 +39235,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9284
   },
   {
     "name":"Space Debris",
@@ -39175,7 +39263,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":38941
   },
   {
     "name":"Space Griffon VF-9",
@@ -39202,7 +39291,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11822
   },
   {
     "name":"Space Hulk - Vengeance of the Blood Angels",
@@ -39229,7 +39319,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13593
   },
   {
     "name":"Space Invaders",
@@ -39256,7 +39347,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11607
   },
   {
     "name":"Space Jam",
@@ -39337,7 +39429,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13613
   },
   {
     "name":"Spawn - The Eternal",
@@ -39364,7 +39457,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11608
   },
   {
     "name":"Spec Ops - Airborne Commando",
@@ -39418,7 +39512,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13590
   },
   {
     "name":"Spec Ops - Ranger Elite",
@@ -39445,7 +39540,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13591
   },
   {
     "name":"Spec Ops - Stealth Patrol",
@@ -39472,7 +39568,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13592
   },
   {
     "name":"Speed Machines",
@@ -39526,7 +39623,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":8920
   },
   {
     "name":"Speed Racer",
@@ -39553,7 +39651,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13587
   },
   {
     "name":"Speedball 2100",
@@ -39580,7 +39679,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13586
   },
   {
     "name":"Spice World",
@@ -39607,7 +39707,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13585
   },
   {
     "name":"Spider - The Video Game",
@@ -39634,7 +39735,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":610
   },
   {
     "name":"Spider-Man",
@@ -39661,7 +39763,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":2955
   },
   {
     "name":"Spider-Man 2 - Enter - Electro",
@@ -39688,7 +39791,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":10933
   },
   {
     "name":"Spin Jam",
@@ -39715,7 +39819,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13582
   },
   {
     "name":"SpongeBob SquarePants - SuperSponge",
@@ -39742,7 +39847,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13581
   },
   {
     "name":"Sports Car GT",
@@ -39769,7 +39875,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9292
   },
   {
     "name":"Sports Superbike",
@@ -39796,7 +39903,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":40720
   },
   {
     "name":"Sports Superbike 2",
@@ -39823,7 +39931,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13580
   },
   {
     "name":"Spot Goes to Hollywood",
@@ -39850,7 +39959,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11609
   },
   {
     "name":"Spyro - Year of the Dragon",
@@ -39877,7 +39987,8 @@
     "version":1.1,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":4986
   },
   {
     "name":"Spyro 2 - Ripto's Rage",
@@ -39904,7 +40015,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9337
   },
   {
     "name":"Spyro the Dragon",
@@ -39931,7 +40043,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":4984
   },
   {
     "name":"Star Fighter",
@@ -39958,7 +40071,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11824
   },
   {
     "name":"Star Gladiator - Episode 1 - Final Crusade",
@@ -40039,7 +40153,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13577
   },
   {
     "name":"Star Ocean - The Second Story  Disc 2",
@@ -40066,7 +40181,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13577
   },
   {
     "name":"Star Trek - Invasion",
@@ -40093,7 +40209,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13575
   },
   {
     "name":"Star Wars - Dark Forces",
@@ -40147,7 +40264,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13574
   },
   {
     "name":"Star Wars - Episode I - Jedi Power Battles",
@@ -40174,7 +40292,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11825
   },
   {
     "name":"Star Wars - Episode I - The Phantom Menace",
@@ -40201,7 +40320,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9861
   },
   {
     "name":"Star Wars - Masters of Teras Kasi",
@@ -40255,7 +40375,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11610
   },
   {
     "name":"Star Wars - Rebel Assault II - The Hidden Empire  Disc 2",
@@ -40282,7 +40403,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11610
   },
   {
     "name":"Starblade Alpha",
@@ -40363,7 +40485,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":613
   },
   {
     "name":"Steel Harbinger",
@@ -40390,7 +40513,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11848
   },
   {
     "name":"Steel Reign",
@@ -40417,7 +40541,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11850
   },
   {
     "name":"Stock Car Racer",
@@ -40471,7 +40596,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13573
   },
   {
     "name":"Street Fighter - The Movie",
@@ -40498,7 +40624,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11851
   },
   {
     "name":"Street Fighter Alpha - Warriors' Dreams",
@@ -40525,7 +40652,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11402
   },
   {
     "name":"Street Fighter Alpha 2",
@@ -40552,7 +40680,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11403
   },
   {
     "name":"Street Fighter Alpha 3",
@@ -40606,7 +40735,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":614
   },
   {
     "name":"Street Fighter Collection  Disc 2",
@@ -40633,7 +40763,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":614
   },
   {
     "name":"Street Fighter Collection 2",
@@ -40660,7 +40791,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13572
   },
   {
     "name":"Street Fighter EX Plus Alpha",
@@ -40687,7 +40819,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11852
   },
   {
     "name":"Street Fighter EX2 Plus",
@@ -40714,7 +40847,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11853
   },
   {
     "name":"Street Racer",
@@ -40741,7 +40875,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11854
   },
   {
     "name":"Street Racquetball",
@@ -40768,7 +40903,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13567
   },
   {
     "name":"Street Scooters",
@@ -40822,7 +40958,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13566
   },
   {
     "name":"Street Sk8er 2",
@@ -40849,7 +40986,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":612
   },
   {
     "name":"Strider",
@@ -40957,7 +41095,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11856
   },
   {
     "name":"Striker 96",
@@ -40984,7 +41123,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11857
   },
   {
     "name":"Striker Pro 2000",
@@ -41092,7 +41232,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9862
   },
   {
     "name":"Submarine Commander",
@@ -41200,7 +41341,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11861
   },
   {
     "name":"Super Dropzone - Intergalactic Rescue Mission",
@@ -41227,7 +41369,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":64902
   },
   {
     "name":"Super Football Champ",
@@ -41308,7 +41451,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":616
   },
   {
     "name":"Super Shot Soccer",
@@ -41335,7 +41479,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13564
   },
   {
     "name":"Superbike 2000",
@@ -41362,7 +41507,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11862
   },
   {
     "name":"SuperCross Circuit",
@@ -41416,7 +41562,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13562
   },
   {
     "name":"Surf Riders",
@@ -41443,7 +41590,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11864
   },
   {
     "name":"Sven-Goeran Eriksson's World Challenge",
@@ -41524,7 +41672,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11865
   },
   {
     "name":"Swing",
@@ -41605,7 +41754,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11867
   },
   {
     "name":"Syndicate Wars",
@@ -41632,7 +41782,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11868
   },
   {
     "name":"Syphon Filter",
@@ -41659,7 +41810,8 @@
     "version":1.1,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":7808
   },
   {
     "name":"Syphon Filter 2  Disc 1",
@@ -41686,7 +41838,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9435
   },
   {
     "name":"Syphon Filter 2  Disc 2",
@@ -41713,7 +41866,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9435
   },
   {
     "name":"Syphon Filter 3",
@@ -41740,7 +41894,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11866
   },
   {
     "name":"T.R.A.G. - Mission of Mercy",
@@ -41794,7 +41949,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11869
   },
   {
     "name":"Tactics Ogre",
@@ -41875,7 +42031,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11872
   },
   {
     "name":"Tales of Destiny",
@@ -41902,7 +42059,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11870
   },
   {
     "name":"Tales of Destiny II  Disc 1",
@@ -41929,7 +42087,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":10787
   },
   {
     "name":"Tales of Destiny II  Disc 2",
@@ -41956,7 +42115,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":10787
   },
   {
     "name":"Tales of Destiny II  Disc 3",
@@ -41983,7 +42143,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":10787
   },
   {
     "name":"Tales Of Phantasia",
@@ -42037,7 +42198,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13561
   },
   {
     "name":"Tank Racer",
@@ -42064,7 +42226,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":39633
   },
   {
     "name":"Taxi 2",
@@ -42118,7 +42281,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9305
   },
   {
     "name":"Team Losi RC Racer",
@@ -42145,7 +42309,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13560
   },
   {
     "name":"TechnoMage - Return of Eternity",
@@ -42172,7 +42337,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":35896
   },
   {
     "name":"Tecmo Stackers",
@@ -42199,7 +42365,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11875
   },
   {
     "name":"Tecmo Super Bowl",
@@ -42226,7 +42393,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13559
   },
   {
     "name":"Tecmo World Golf - Japan",
@@ -42280,7 +42448,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11874
   },
   {
     "name":"Tekken",
@@ -42307,7 +42476,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":2612
   },
   {
     "name":"Tekken 2",
@@ -42334,7 +42504,8 @@
     "version":1.1,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":2613
   },
   {
     "name":"Tekken 3",
@@ -42388,7 +42559,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11877
   },
   {
     "name":"Ten Pin Alley",
@@ -42415,7 +42587,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13553
   },
   {
     "name":"Tenchu - Stealth Assassins",
@@ -42469,7 +42642,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":10250
   },
   {
     "name":"Tennis",
@@ -42496,7 +42670,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9441
   },
   {
     "name":"Tennis Arena",
@@ -42523,7 +42698,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13552
   },
   {
     "name":"Terracon",
@@ -42604,7 +42780,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11879
   },
   {
     "name":"Test Drive - Off-Road 2",
@@ -42631,7 +42808,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11880
   },
   {
     "name":"Test Drive - Off-Road 3",
@@ -42658,7 +42836,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13550
   },
   {
     "name":"Test Drive 4",
@@ -42685,7 +42864,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11686
   },
   {
     "name":"Test Drive 4x4",
@@ -42739,7 +42919,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9423
   },
   {
     "name":"Test Drive 6",
@@ -42766,7 +42947,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11878
   },
   {
     "name":"Test Drive Le Mans",
@@ -42793,7 +42975,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13551
   },
   {
     "name":"Tetris Plus",
@@ -42820,7 +43003,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11881
   },
   {
     "name":"Theme Hospital",
@@ -42847,7 +43031,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9442
   },
   {
     "name":"Theme Park",
@@ -42874,7 +43059,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11676
   },
   {
     "name":"This Is Football",
@@ -42955,7 +43141,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13527
   },
   {
     "name":"Thousand Arms  Disc 2",
@@ -42982,7 +43169,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13527
   },
   {
     "name":"Thrasher - Skate and Destroy",
@@ -43036,7 +43224,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11675
   },
   {
     "name":"Three Stooges, The",
@@ -43090,7 +43279,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12570
   },
   {
     "name":"Thunder Strike 2",
@@ -43117,7 +43307,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13524
   },
   {
     "name":"Thunder Truck Rally",
@@ -43144,7 +43335,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13525
   },
   {
     "name":"Tiger Woods 99 PGA Tour Golf",
@@ -43171,7 +43363,8 @@
     "version":1.1,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13522
   },
   {
     "name":"Tiger Woods PGA Tour 2000",
@@ -43198,7 +43391,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13521
   },
   {
     "name":"Tiger Woods PGA Tour Golf",
@@ -43225,7 +43419,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13523
   },
   {
     "name":"Tigershark",
@@ -43333,7 +43528,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11673
   },
   {
     "name":"Time Crisis - Project Titan",
@@ -43360,7 +43556,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11672
   },
   {
     "name":"Time Crisis",
@@ -43387,7 +43584,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":618
   },
   {
     "name":"Timeshock!",
@@ -43441,7 +43639,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":31283
   },
   {
     "name":"Tiny Tank",
@@ -43468,7 +43667,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13520
   },
   {
     "name":"Tiny Toon Adventures - Plucky's Big Adventure",
@@ -43495,7 +43695,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13519
   },
   {
     "name":"Tiny Toon Adventures - The Great Beanstalk",
@@ -43522,7 +43723,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13518
   },
   {
     "name":"Tiny Toon Adventures - Toonenstein - Dare to Scare!",
@@ -43549,7 +43751,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13517
   },
   {
     "name":"Titan Wars",
@@ -43603,7 +43806,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13515
   },
   {
     "name":"TNN Motorsports Hardcore TR",
@@ -43630,7 +43834,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13516
   },
   {
     "name":"Tobal 2",
@@ -43657,7 +43862,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12480
   },
   {
     "name":"Tobal No.1",
@@ -43684,7 +43890,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":3666
   },
   {
     "name":"TOCA 2 Touring Car Challenge",
@@ -43711,7 +43918,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11671
   },
   {
     "name":"TOCA Championship Racing",
@@ -43738,7 +43946,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":63090
   },
   {
     "name":"Tokyo Highway Battle",
@@ -43765,7 +43974,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13513
   },
   {
     "name":"Tom and Jerry in House Trap",
@@ -43792,7 +44002,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":8286
   },
   {
     "name":"Tom Clancy's Rainbow Six - Lone Wolf",
@@ -43819,7 +44030,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11669
   },
   {
     "name":"Tom Clancy's Rainbow Six - Rogue Spear",
@@ -43873,7 +44085,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9859
   },
   {
     "name":"Tomb Raider - The Last Revelation",
@@ -43900,7 +44113,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":8349
   },
   {
     "name":"Tomb Raider",
@@ -43927,7 +44141,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":2780
   },
   {
     "name":"Tomb Raider Chronicles",
@@ -43954,7 +44169,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":10775
   },
   {
     "name":"Tomb Raider II - Starring Lara Croft",
@@ -44008,7 +44224,8 @@
     "version":1.2,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":2565
   },
   {
     "name":"Tomba!",
@@ -44062,7 +44279,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9863
   },
   {
     "name":"Tommi Maekinen Rally",
@@ -44116,7 +44334,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13508
   },
   {
     "name":"Tony Hawk's Pro Skater",
@@ -44143,7 +44362,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9353
   },
   {
     "name":"Tony Hawk's Pro Skater 2",
@@ -44170,7 +44390,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9353
   },
   {
     "name":"Tony Hawk's Pro Skater 3",
@@ -44197,7 +44418,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11667
   },
   {
     "name":"Tony Hawk's Pro Skater 4",
@@ -44224,7 +44446,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11668
   },
   {
     "name":"Top Gun - Fire at Will!",
@@ -44251,7 +44474,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11666
   },
   {
     "name":"Total Eclipse - Turbo",
@@ -44278,7 +44502,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11665
   },
   {
     "name":"Toys",
@@ -44305,7 +44530,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":35306
   },
   {
     "name":"Transformers - Beast Wars Transmetals",
@@ -44332,7 +44558,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":44176
   },
   {
     "name":"Transport Tycoon",
@@ -44440,7 +44667,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11518
   },
   {
     "name":"Trick'n Snowboarder",
@@ -44467,7 +44695,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13449
   },
   {
     "name":"Trickshot",
@@ -44521,7 +44750,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13446
   },
   {
     "name":"Triple Play 2001",
@@ -44548,7 +44778,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13445
   },
   {
     "name":"Triple Play 97",
@@ -44575,7 +44806,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13448
   },
   {
     "name":"Triple Play 98",
@@ -44602,7 +44834,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13447
   },
   {
     "name":"Triple Play 99",
@@ -44629,7 +44862,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11011
   },
   {
     "name":"Triple Play Baseball",
@@ -44656,7 +44890,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13444
   },
   {
     "name":"Truck Racing",
@@ -44683,7 +44918,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":52909
   },
   {
     "name":"True Pinball",
@@ -44710,7 +44946,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13443
   },
   {
     "name":"Tunguska - Legend of Faith",
@@ -44764,7 +45001,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13442
   },
   {
     "name":"Turbo Prop Racing",
@@ -44791,7 +45029,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13441
   },
   {
     "name":"Turnabout",
@@ -44818,7 +45057,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13440
   },
   {
     "name":"Twisted Metal - Small Brawl",
@@ -44845,7 +45085,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9314
   },
   {
     "name":"Twisted Metal",
@@ -44872,7 +45113,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9310
   },
   {
     "name":"Twisted Metal 2",
@@ -44899,7 +45141,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9311
   },
   {
     "name":"Twisted Metal 4",
@@ -44980,7 +45223,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":14074
   },
   {
     "name":"Ubik",
@@ -45142,7 +45386,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13427
   },
   {
     "name":"Ultimate Brain Games",
@@ -45169,7 +45414,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11663
   },
   {
     "name":"Ultimate Fighting Championship",
@@ -45196,7 +45442,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11664
   },
   {
     "name":"Um Jammer Lammy",
@@ -45223,7 +45470,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":2292
   },
   {
     "name":"Unholy War, The",
@@ -45304,7 +45552,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9426
   },
   {
     "name":"USA Racer",
@@ -45358,7 +45607,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":65397
   },
   {
     "name":"V-Tennis",
@@ -45439,7 +45689,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":17850
   },
   {
     "name":"Vagrant Story",
@@ -45466,7 +45717,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":3667
   },
   {
     "name":"Valkyrie Profile  Disc 1",
@@ -45493,7 +45745,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12403
   },
   {
     "name":"Valkyrie Profile  Disc 2",
@@ -45520,7 +45773,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12403
   },
   {
     "name":"Vampire Hunter D",
@@ -45547,7 +45801,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11657
   },
   {
     "name":"Vanark",
@@ -45574,7 +45829,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11548
   },
   {
     "name":"Vandal Hearts",
@@ -45601,7 +45857,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":621
   },
   {
     "name":"Vandal Hearts II",
@@ -45628,7 +45885,8 @@
     "version":1.1,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":8558
   },
   {
     "name":"Vanguard Bandits",
@@ -45655,7 +45913,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":12543
   },
   {
     "name":"Vanishing Point",
@@ -45682,7 +45941,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13418
   },
   {
     "name":"Vegas Casino",
@@ -45736,7 +45996,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13416
   },
   {
     "name":"Versailles - A Game of Intrigue",
@@ -45817,7 +46078,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":36916
   },
   {
     "name":"Victory Boxing Challenger",
@@ -45844,7 +46106,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":40716
   },
   {
     "name":"Victory Boxing Champion Edition",
@@ -45925,7 +46188,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11660
   },
   {
     "name":"Vigilante 8 - Second Offense",
@@ -45979,7 +46243,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11516
   },
   {
     "name":"Viper",
@@ -46006,7 +46271,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":63912
   },
   {
     "name":"Virtual Golf",
@@ -46060,7 +46326,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11658
   },
   {
     "name":"Virtual Pool",
@@ -46087,7 +46354,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11659
   },
   {
     "name":"Virtual Pool 3",
@@ -46114,7 +46382,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13378
   },
   {
     "name":"Virus - It Is Aware",
@@ -46168,7 +46437,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13377
   },
   {
     "name":"VMX Racing",
@@ -46195,7 +46465,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13376
   },
   {
     "name":"VR Baseball '97",
@@ -46222,7 +46493,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13375
   },
   {
     "name":"VR Baseball '99",
@@ -46249,7 +46521,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13374
   },
   {
     "name":"VR Golf '97",
@@ -46276,7 +46549,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13373
   },
   {
     "name":"VR Soccer '96",
@@ -46303,7 +46577,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":42851
   },
   {
     "name":"VR Sports Powerboat Racing",
@@ -46330,7 +46605,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13426
   },
   {
     "name":"Vs.",
@@ -46357,7 +46633,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13370
   },
   {
     "name":"Wacky Races",
@@ -46384,7 +46661,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":30607
   },
   {
     "name":"Walt Disney World Quest - Magical Racing Tour",
@@ -46411,7 +46689,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13366
   },
   {
     "name":"Walt Disney's The Jungle Book - Rhythm n' Groove",
@@ -46438,7 +46717,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":2294
   },
   {
     "name":"Wanted",
@@ -46519,7 +46799,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11656
   },
   {
     "name":"WarGames - Defcon 1",
@@ -46546,7 +46827,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":10020
   },
   {
     "name":"Warhammer - Dark Omen",
@@ -46573,7 +46855,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11642
   },
   {
     "name":"Warhammer - Shadow of the Horned Rat",
@@ -46600,7 +46883,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":622
   },
   {
     "name":"Warhawk - The Red Mercury Missions",
@@ -46654,7 +46938,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13323
   },
   {
     "name":"Warm Up!",
@@ -46681,7 +46966,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":35885
   },
   {
     "name":"Warpath - Jurassic Park",
@@ -46708,7 +46994,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11641
   },
   {
     "name":"Warriors of Might and Magic",
@@ -46735,7 +47022,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":623
   },
   {
     "name":"Warzone 2100",
@@ -46762,7 +47050,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13341
   },
   {
     "name":"Wayne Gretzky's 3D Hockey '98",
@@ -46789,7 +47078,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":624
   },
   {
     "name":"WCW Backstage Assault",
@@ -46816,7 +47106,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13339
   },
   {
     "name":"WCW Mayhem",
@@ -46843,7 +47134,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13336
   },
   {
     "name":"WCW Nitro",
@@ -46870,7 +47162,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13311
   },
   {
     "name":"WCW vs. The World",
@@ -47005,7 +47298,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":31159
   },
   {
     "name":"Wheel of Fortune",
@@ -47032,7 +47326,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11655
   },
   {
     "name":"Whizz",
@@ -47086,7 +47381,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13335
   },
   {
     "name":"Who Wants to Be a Millionaire - 2nd Edition",
@@ -47113,7 +47409,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13335
   },
   {
     "name":"Who Wants to Be a Millionaire - 3rd Edition",
@@ -47140,7 +47437,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":31160
   },
   {
     "name":"Who Wants to Be a Millionaire - Junior",
@@ -47194,7 +47492,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":52910
   },
   {
     "name":"Wild 9",
@@ -47221,7 +47520,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":8922
   },
   {
     "name":"Wild Arms",
@@ -47248,7 +47548,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9444
   },
   {
     "name":"Wild Arms 2  Disc 1",
@@ -47275,7 +47576,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11640
   },
   {
     "name":"Wild Arms 2  Disc 2",
@@ -47302,7 +47604,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11640
   },
   {
     "name":"Wild Rapids",
@@ -47329,7 +47632,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":60271
   },
   {
     "name":"Wild Thornberrys, The - Animal Adventures",
@@ -47356,7 +47660,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13528
   },
   {
     "name":"Williams Arcade's Greatest Hits",
@@ -47383,7 +47688,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13334
   },
   {
     "name":"Windsurfers Paradise",
@@ -47413,7 +47719,7 @@
     "launchCount":0
   },
   {
-    "name":"Wing Commander III - Heart of the Tiger  Disc 1",
+    "name":"Wing Commander III - Heart of the Tiger - Disc 1",
     "full_name":"Wing Commander III - Heart of the Tiger (USA) (Disc 1)",
     "year":"1996",
     "rating":"ESRB - T (Teen)",
@@ -47423,7 +47729,7 @@
     "score":"3.1",
     "players":"1 Player",
     "description":"The war against the Kilrathi is going badly for the Confederation. Its flagship, the Concordia, has been destroyed, battles are lost on all fronts. War hero Colonel Christopher Blair is transferred to the old carrier Victory. Take the role of Blair and ensure the success of the Confederation's last-ditch attempt for victory: the destruction of the Kilrathi homeworld . . ****Wing Commander III has the usual mix of space battles and cinematic storytelling. Changes from the first two games include SVGA graphics, the use of texture-mapped polygons instead of bitmaps for spaceflight sequences and real Hollywood actors appearing in the cinematic scenes.\n",
-    "title":"Wing Commander III - Heart of the Tiger  Disc 1",
+    "title":"Wing Commander III - Heart of the Tiger - Disc 1",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -47437,10 +47743,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13331
   },
   {
-    "name":"Wing Commander III - Heart of the Tiger  Disc 2",
+    "name":"Wing Commander III - Heart of the Tiger - Disc 2",
     "full_name":"Wing Commander III - Heart of the Tiger (USA) (Disc 2)",
     "year":"1996",
     "rating":"ESRB - T (Teen)",
@@ -47450,7 +47757,7 @@
     "score":"3.1",
     "players":"1 Player",
     "description":"The war against the Kilrathi is going badly for the Confederation. Its flagship, the Concordia, has been destroyed, battles are lost on all fronts. War hero Colonel Christopher Blair is transferred to the old carrier Victory. Take the role of Blair and ensure the success of the Confederation's last-ditch attempt for victory: the destruction of the Kilrathi homeworld . . ****Wing Commander III has the usual mix of space battles and cinematic storytelling. Changes from the first two games include SVGA graphics, the use of texture-mapped polygons instead of bitmaps for spaceflight sequences and real Hollywood actors appearing in the cinematic scenes.\n",
-    "title":"Wing Commander III - Heart of the Tiger  Disc 2",
+    "title":"Wing Commander III - Heart of the Tiger - Disc 2",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -47464,7 +47771,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13331
   },
   {
     "name":"Wing Commander III - Heart of the Tiger  Disc 3",
@@ -47491,7 +47799,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13331
   },
   {
     "name":"Wing Commander III - Heart of the Tiger  Disc 4",
@@ -47518,10 +47827,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13331
   },
   {
-    "name":"Wing Commander IV - The Price of Freedom  Disc 1",
+    "name":"Wing Commander IV - The Price of Freedom - Disc 1",
     "full_name":"Wing Commander IV - The Price of Freedom (USA) (Disc 1)",
     "year":"1997",
     "rating":"ESRB - T (Teen)",
@@ -47531,7 +47841,7 @@
     "score":"2.8",
     "players":"1 Player",
     "description":"\"Christopher Blair, \"\"Heart of the Tiger\"\" had retired to a farming planet after the war, content with retirement, so he says... In the depths of space, a new menace has surfaced. Some unknown attackers are killing civilian ships. The tension between the Confederation and the Border Worlds is at an all time high, as both sides accuse the other of staging the attacks. Admiral Tolwyn has recalled Blair back to service, where he will make the most difficult choice of all... And contemplate action he had never dared before, in the name of justice...****Wing Commander IV: The Price of Freedom is a mix of interactive movie and space sim. The game has a dynamic mission tree, which means the player's behaviour will determine the next mission. The videos feature real actors, like Mark Hamill, Tom Wilson, John Rhys-Davies and Malcolm McDowell. Before the start of each mission, the space craft can be equipped with different weapons. Sometimes the mission objectives change during flight, and the player has to make decisions what he wants to do next, e.g. help out his friend or destroy an enemy fighter.\"\n",
-    "title":"Wing Commander IV - The Price of Freedom  Disc 1",
+    "title":"Wing Commander IV - The Price of Freedom - Disc 1",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -47545,10 +47855,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11639
   },
   {
-    "name":"Wing Commander IV - The Price of Freedom  Disc 2",
+    "name":"Wing Commander IV - The Price of Freedom - Disc 2",
     "full_name":"Wing Commander IV - The Price of Freedom (USA) (Disc 2)",
     "year":"1997",
     "rating":"ESRB - T (Teen)",
@@ -47558,7 +47869,7 @@
     "score":"2.8",
     "players":"1 Player",
     "description":"\"Christopher Blair, \"\"Heart of the Tiger\"\" had retired to a farming planet after the war, content with retirement, so he says... In the depths of space, a new menace has surfaced. Some unknown attackers are killing civilian ships. The tension between the Confederation and the Border Worlds is at an all time high, as both sides accuse the other of staging the attacks. Admiral Tolwyn has recalled Blair back to service, where he will make the most difficult choice of all... And contemplate action he had never dared before, in the name of justice...****Wing Commander IV: The Price of Freedom is a mix of interactive movie and space sim. The game has a dynamic mission tree, which means the player's behaviour will determine the next mission. The videos feature real actors, like Mark Hamill, Tom Wilson, John Rhys-Davies and Malcolm McDowell. Before the start of each mission, the space craft can be equipped with different weapons. Sometimes the mission objectives change during flight, and the player has to make decisions what he wants to do next, e.g. help out his friend or destroy an enemy fighter.\"\n",
-    "title":"Wing Commander IV - The Price of Freedom  Disc 2",
+    "title":"Wing Commander IV - The Price of Freedom - Disc 2",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -47572,10 +47883,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11639
   },
   {
-    "name":"Wing Commander IV - The Price of Freedom  Disc 3",
+    "name":"Wing Commander IV - The Price of Freedom - Disc 3",
     "full_name":"Wing Commander IV - The Price of Freedom (USA) (Disc 3)",
     "year":"1997",
     "rating":"ESRB - T (Teen)",
@@ -47585,7 +47897,7 @@
     "score":"2.8",
     "players":"1 Player",
     "description":"\"Christopher Blair, \"\"Heart of the Tiger\"\" had retired to a farming planet after the war, content with retirement, so he says... In the depths of space, a new menace has surfaced. Some unknown attackers are killing civilian ships. The tension between the Confederation and the Border Worlds is at an all time high, as both sides accuse the other of staging the attacks. Admiral Tolwyn has recalled Blair back to service, where he will make the most difficult choice of all... And contemplate action he had never dared before, in the name of justice...****Wing Commander IV: The Price of Freedom is a mix of interactive movie and space sim. The game has a dynamic mission tree, which means the player's behaviour will determine the next mission. The videos feature real actors, like Mark Hamill, Tom Wilson, John Rhys-Davies and Malcolm McDowell. Before the start of each mission, the space craft can be equipped with different weapons. Sometimes the mission objectives change during flight, and the player has to make decisions what he wants to do next, e.g. help out his friend or destroy an enemy fighter.\"\n",
-    "title":"Wing Commander IV - The Price of Freedom  Disc 3",
+    "title":"Wing Commander IV - The Price of Freedom - Disc 3",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -47599,10 +47911,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11639
   },
   {
-    "name":"Wing Commander IV - The Price of Freedom  Disc 4",
+    "name":"Wing Commander IV - The Price of Freedom - Disc 4",
     "full_name":"Wing Commander IV - The Price of Freedom (USA) (Disc 4)",
     "year":"1997",
     "rating":"ESRB - T (Teen)",
@@ -47612,7 +47925,7 @@
     "score":"2.8",
     "players":"1 Player",
     "description":"\"Christopher Blair, \"\"Heart of the Tiger\"\" had retired to a farming planet after the war, content with retirement, so he says... In the depths of space, a new menace has surfaced. Some unknown attackers are killing civilian ships. The tension between the Confederation and the Border Worlds is at an all time high, as both sides accuse the other of staging the attacks. Admiral Tolwyn has recalled Blair back to service, where he will make the most difficult choice of all... And contemplate action he had never dared before, in the name of justice...****Wing Commander IV: The Price of Freedom is a mix of interactive movie and space sim. The game has a dynamic mission tree, which means the player's behaviour will determine the next mission. The videos feature real actors, like Mark Hamill, Tom Wilson, John Rhys-Davies and Malcolm McDowell. Before the start of each mission, the space craft can be equipped with different weapons. Sometimes the mission objectives change during flight, and the player has to make decisions what he wants to do next, e.g. help out his friend or destroy an enemy fighter.\"\n",
-    "title":"Wing Commander IV - The Price of Freedom  Disc 4",
+    "title":"Wing Commander IV - The Price of Freedom - Disc 4",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -47626,7 +47939,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11639
   },
   {
     "name":"Wing Over",
@@ -47653,7 +47967,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":63109
   },
   {
     "name":"Wing Over 2",
@@ -47734,7 +48049,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11517
   },
   {
     "name":"WipEout 3 - Special Edition",
@@ -47761,7 +48077,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":19205
   },
   {
     "name":"WipEout 3",
@@ -47788,7 +48105,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":2560
   },
   {
     "name":"WipEout XL",
@@ -47815,7 +48133,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":625
   },
   {
     "name":"Woody Woodpecker Racing",
@@ -47842,7 +48161,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11653
   },
   {
     "name":"World Championship Snooker",
@@ -47869,7 +48189,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":35537
   },
   {
     "name":"World Cup 98",
@@ -47896,7 +48217,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13329
   },
   {
     "name":"World Cup Golf - Professional Edition",
@@ -47923,7 +48245,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11652
   },
   {
     "name":"World Destruction League - Thunder Tanks",
@@ -47950,7 +48273,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13325
   },
   {
     "name":"World Destruction League - WarJetz",
@@ -47977,7 +48301,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13323
   },
   {
     "name":"World League Basketball",
@@ -48112,7 +48437,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11651
   },
   {
     "name":"Worms",
@@ -48139,7 +48465,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11638
   },
   {
     "name":"Worms Armageddon",
@@ -48166,7 +48493,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":6179
   },
   {
     "name":"Worms Pinball",
@@ -48193,7 +48521,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":23421
   },
   {
     "name":"Worms World Party",
@@ -48220,7 +48549,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":8292
   },
   {
     "name":"Wreckin Crew - Drive Dangerously",
@@ -48247,7 +48577,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13318
   },
   {
     "name":"Wu-Tang - Shaolin Style",
@@ -48274,7 +48605,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11654
   },
   {
     "name":"WWF Attitude",
@@ -48301,7 +48633,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13314
   },
   {
     "name":"WWF In Your House",
@@ -48328,7 +48661,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11889
   },
   {
     "name":"WWF SmackDown!",
@@ -48355,7 +48689,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13292
   },
   {
     "name":"WWF SmackDown! 2 - Know Your Role",
@@ -48382,7 +48717,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":13293
   },
   {
     "name":"WWF War Zone",
@@ -48409,7 +48745,8 @@
     "version":1.1,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":626
   },
   {
     "name":"WWF WrestleMania - The Arcade Game",
@@ -48436,7 +48773,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11637
   },
   {
     "name":"X Games Pro Boarder",
@@ -48463,7 +48801,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":21245
   },
   {
     "name":"X-Bladez - Inline Skater",
@@ -48490,7 +48829,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11895
   },
   {
     "name":"X-Com - Terror from the Deep",
@@ -48517,7 +48857,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":14150
   },
   {
     "name":"X-Com - UFO Defense",
@@ -48544,10 +48885,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11630
   },
   {
-    "name":"X-Files, The  Disc 1",
+    "name":"X-Files, The - Disc 1",
     "full_name":"X-Files, The (USA) (Disc 1)",
     "year":"1999",
     "rating":"ESRB - T (Teen)",
@@ -48557,7 +48899,7 @@
     "score":"3.8",
     "players":"1 Player",
     "description":"\"As an extension of one of the most long-running television series of all time, The X-Files, play through the eyes of Special Agent Craig Willmore, a new FBI field investigator brought in to locate missing agents Fox Mulder and Dana Scully whose last location was the Everett, Washington, area. In this \"\"movie quality\"\" video production, characters are played by the actors and actresses from the show, including Gillian Anderson (Scully) and David Duchovny (Mulder).****As the game begins, you are given a briefing of your mission. Gather up all state-of-the-art spy tools (night vision goggles, a digital camera, PDA, lock picks, evidence kit, a standard issue revolver, handcuffs and badge) and then head out to follow their trail. As you explore the various locations, take photographs, pick up pieces of evidence and talk with people. Use your Newton PDA to access the navigational map, to make notes and send/receive e-mail. Trace telephone numbers, run background checks and license plate ids and even post an All Points Bulletin on missing persons using the computer network at your home or office. By using photo viewer software, download field photographs to the computer where they can be enlarged and studied more closely for clues.****Features include emotion icons for interjecting different tones during conversations (mean, humorous or technical) which effect the answer given. An in-game hint system, Artificial Intelligence, can be set on or off. In addition, there are multiple endings as a direct result of actions you take.****The Truth Is Out There ... Trust No One\"\n",
-    "title":"X-Files, The  Disc 1",
+    "title":"X-Files, The - Disc 1",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -48571,10 +48913,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11677
   },
   {
-    "name":"X-Files, The  Disc 2",
+    "name":"X-Files, The - Disc 2",
     "full_name":"X-Files, The (USA) (Disc 2)",
     "year":"1999",
     "rating":"ESRB - T (Teen)",
@@ -48584,7 +48927,7 @@
     "score":"3.8",
     "players":"1 Player",
     "description":"\"As an extension of one of the most long-running television series of all time, The X-Files, play through the eyes of Special Agent Craig Willmore, a new FBI field investigator brought in to locate missing agents Fox Mulder and Dana Scully whose last location was the Everett, Washington, area. In this \"\"movie quality\"\" video production, characters are played by the actors and actresses from the show, including Gillian Anderson (Scully) and David Duchovny (Mulder).****As the game begins, you are given a briefing of your mission. Gather up all state-of-the-art spy tools (night vision goggles, a digital camera, PDA, lock picks, evidence kit, a standard issue revolver, handcuffs and badge) and then head out to follow their trail. As you explore the various locations, take photographs, pick up pieces of evidence and talk with people. Use your Newton PDA to access the navigational map, to make notes and send/receive e-mail. Trace telephone numbers, run background checks and license plate ids and even post an All Points Bulletin on missing persons using the computer network at your home or office. By using photo viewer software, download field photographs to the computer where they can be enlarged and studied more closely for clues.****Features include emotion icons for interjecting different tones during conversations (mean, humorous or technical) which effect the answer given. An in-game hint system, Artificial Intelligence, can be set on or off. In addition, there are multiple endings as a direct result of actions you take.****The Truth Is Out There ... Trust No One\"\n",
-    "title":"X-Files, The  Disc 2",
+    "title":"X-Files, The - Disc 2",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -48598,10 +48941,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11677
   },
   {
-    "name":"X-Files, The  Disc 3",
+    "name":"X-Files, The - Disc 3",
     "full_name":"X-Files, The (USA) (Disc 3)",
     "year":"1999",
     "rating":"ESRB - T (Teen)",
@@ -48611,7 +48955,7 @@
     "score":"3.8",
     "players":"1 Player",
     "description":"\"As an extension of one of the most long-running television series of all time, The X-Files, play through the eyes of Special Agent Craig Willmore, a new FBI field investigator brought in to locate missing agents Fox Mulder and Dana Scully whose last location was the Everett, Washington, area. In this \"\"movie quality\"\" video production, characters are played by the actors and actresses from the show, including Gillian Anderson (Scully) and David Duchovny (Mulder).****As the game begins, you are given a briefing of your mission. Gather up all state-of-the-art spy tools (night vision goggles, a digital camera, PDA, lock picks, evidence kit, a standard issue revolver, handcuffs and badge) and then head out to follow their trail. As you explore the various locations, take photographs, pick up pieces of evidence and talk with people. Use your Newton PDA to access the navigational map, to make notes and send/receive e-mail. Trace telephone numbers, run background checks and license plate ids and even post an All Points Bulletin on missing persons using the computer network at your home or office. By using photo viewer software, download field photographs to the computer where they can be enlarged and studied more closely for clues.****Features include emotion icons for interjecting different tones during conversations (mean, humorous or technical) which effect the answer given. An in-game hint system, Artificial Intelligence, can be set on or off. In addition, there are multiple endings as a direct result of actions you take.****The Truth Is Out There ... Trust No One\"\n",
-    "title":"X-Files, The  Disc 3",
+    "title":"X-Files, The - Disc 3",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -48625,10 +48969,11 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11677
   },
   {
-    "name":"X-Files, The  Disc 4",
+    "name":"X-Files, The - Disc 4",
     "full_name":"X-Files, The (USA) (Disc 4)",
     "year":"1999",
     "rating":"ESRB - T (Teen)",
@@ -48638,7 +48983,7 @@
     "score":"3.8",
     "players":"1 Player",
     "description":"\"As an extension of one of the most long-running television series of all time, The X-Files, play through the eyes of Special Agent Craig Willmore, a new FBI field investigator brought in to locate missing agents Fox Mulder and Dana Scully whose last location was the Everett, Washington, area. In this \"\"movie quality\"\" video production, characters are played by the actors and actresses from the show, including Gillian Anderson (Scully) and David Duchovny (Mulder).****As the game begins, you are given a briefing of your mission. Gather up all state-of-the-art spy tools (night vision goggles, a digital camera, PDA, lock picks, evidence kit, a standard issue revolver, handcuffs and badge) and then head out to follow their trail. As you explore the various locations, take photographs, pick up pieces of evidence and talk with people. Use your Newton PDA to access the navigational map, to make notes and send/receive e-mail. Trace telephone numbers, run background checks and license plate ids and even post an All Points Bulletin on missing persons using the computer network at your home or office. By using photo viewer software, download field photographs to the computer where they can be enlarged and studied more closely for clues.****Features include emotion icons for interjecting different tones during conversations (mean, humorous or technical) which effect the answer given. An in-game hint system, Artificial Intelligence, can be set on or off. In addition, there are multiple endings as a direct result of actions you take.****The Truth Is Out There ... Trust No One\"\n",
-    "title":"X-Files, The  Disc 4",
+    "title":"X-Files, The - Disc 4",
     "originalTitle":"",
     "alternateTitle":"",
     "platform":"Sony Playstation",
@@ -48652,7 +48997,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11677
   },
   {
     "name":"X-Men - Children of the Atom",
@@ -48679,7 +49025,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11634
   },
   {
     "name":"X-Men - Mutant Academy",
@@ -48706,7 +49053,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11631
   },
   {
     "name":"X-Men - Mutant Academy 2",
@@ -48733,7 +49081,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11632
   },
   {
     "name":"X-Men vs. Street Fighter",
@@ -48760,7 +49109,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":628
   },
   {
     "name":"X'treme Roller",
@@ -48814,7 +49164,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":31161
   },
   {
     "name":"Xena - Warrior Princess",
@@ -48841,7 +49192,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11633
   },
   {
     "name":"Xenocracy",
@@ -48895,7 +49247,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":627
   },
   {
     "name":"Xenogears  Disc 2",
@@ -48922,7 +49275,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":627
   },
   {
     "name":"Xevious 3D-G+",
@@ -48949,7 +49303,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11635
   },
   {
     "name":"XS Airboat Racing",
@@ -48976,7 +49331,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11894
   },
   {
     "name":"XS Junior League Dodgeball",
@@ -49003,7 +49359,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11893
   },
   {
     "name":"XS Junior League Football",
@@ -49030,7 +49387,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11892
   },
   {
     "name":"XS Junior League Soccer",
@@ -49057,7 +49415,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11891
   },
   {
     "name":"XS Moto",
@@ -49084,7 +49443,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11890
   },
   {
     "name":"Yeh Yeh Tennis",
@@ -49138,7 +49498,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":33514
   },
   {
     "name":"Yetisports World Tour",
@@ -49192,7 +49553,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11629
   },
   {
     "name":"You Don't Know Jack  Disc 2",
@@ -49219,7 +49581,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11629
   },
   {
     "name":"You Don't Know Jack Mock 2",
@@ -49246,7 +49609,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":31163
   },
   {
     "name":"YoYo's Puzzle Park",
@@ -49273,7 +49637,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":45285
   },
   {
     "name":"Yu-Gi-Oh! - Forbidden Memories",
@@ -49300,7 +49665,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":9864
   },
   {
     "name":"Yusha - Heaven's Gate",
@@ -49327,7 +49693,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":17853
   },
   {
     "name":"Z",
@@ -49354,7 +49721,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":23365
   },
   {
     "name":"Zero Divide",
@@ -49381,7 +49749,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11627
   },
   {
     "name":"Zero Divide 2 - The Secret Wish",
@@ -49408,7 +49777,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":33868
   },
   {
     "name":"Zoboomafoo - Leapin' Lemurs!",
@@ -49435,7 +49805,8 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11628
   },
   {
     "name":"Zoop - America's Largest Killer of Time!",
@@ -49462,6 +49833,7 @@
     "version":1.0,
     "votes":0,
     "isFavorite":0,
-    "launchCount":0
+    "launchCount":0,
+    "thegamesdb_id":11626
   }
 ]
