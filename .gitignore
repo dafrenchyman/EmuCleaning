@@ -1,2 +1,5 @@
 docker/PSX/chd/*
 docker/PSX/zip/*
+roms
+artwork
+.venv

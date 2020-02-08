@@ -1,0 +1,6 @@
+black
+flake8
+fuzzywuzzy
+pre-commit
+requests
+xmltodict
