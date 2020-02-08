@@ -78,8 +78,33 @@ class TheGamesDb:
             if platform_name == platform["name"]:
                 return platform["id"]
 
+    def get_platform_name_by_id(self, platform_id):
+        for platform in list(self.platforms["data"]["platforms"].values()):
+            if platform_id == platform["id"]:
+                return platform["name"]
+
+    def get_publisher_by_id(self, publisher_id):
+        for publisher in list(self.publishers["data"]["publishers"].values()):
+            if publisher_id == publisher["id"]:
+                return publisher["name"]
+
+    def get_developer_by_id(self, developer_id):
+        for developer in list(self.developers["data"]["developers"].values()):
+            if developer_id == developer["id"]:
+                return developer["name"]
+
+    def get_genre_by_id(self, genre_id):
+        for genre in list(self.genres["data"]["genres"].values()):
+            if genre_id == genre["id"]:
+                return genre["name"]
+
     def get_id_by_name(self, game_name, platform_id):
         game_name = self._clean_game_name(game_name)
         for game in self.games["data"]["games"]:
-            if game["GameTitle"] == game_name and platform_id == game["SystemId"]:
+            if game["game_title"] == game_name and platform_id == game["platform"]:
                 return game["id"]
+
+    def get_game_data_by_id(self, game_id):
+        for game in self.games["data"]["games"]:
+            if game["id"] == game_id:
+                return game
