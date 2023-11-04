@@ -10,7 +10,7 @@ for zipFile in *.zip; do
 	echo "unzipping..."
 	unzip "${zipFile}" -d "${gameName}"
 	echo "converting..."
-	chdman createcd -i "${gameName}/${cueFile}" -o "../chd/${gameName}.chd"
+	chdman createcd --force -i "${gameName}/${cueFile}" -o "../chd/${gameName}.chd"
 	echo "cleanup..."
 	rm -rf "./${gameName}"
 done

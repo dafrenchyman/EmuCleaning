@@ -1,7 +1,6 @@
-version: '3.2'
+version: "3.2"
 
 services:
-
   # PSX Conversion from bin/cue to chd
   convert_psx:
     build:
@@ -10,5 +9,5 @@ services:
     image: dafrenchyman/emucleaning_psx
     command: /app/convert_psx.sh
     volumes:
-      - './PSX/zip:/app/zip'
-      - './PSX/chd:/app/chd'
+      - "./PSX/zip:/app/zip"
+      - "./PSX/chd:/app/chd"

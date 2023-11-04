@@ -3,9 +3,8 @@ import os
 import re
 import sys
 
-from fuzzywuzzy import fuzz, process
 import requests
-
+from fuzzywuzzy import fuzz, process
 
 API_KEY = "1e821bf1bab06854840650d77e7e2248f49583821ff9191f2cced47e43bf0a73"
 GAME_NAME_URL = "https://api.thegamesdb.net/Games/ByGameName"
@@ -22,6 +21,7 @@ PLAYERS_LOOKUP = {
     "1-16 Players": 16,
 }
 
+
 def get_region(title):
     if "(USA)" in title:
         return "USA"
@@ -29,6 +29,7 @@ def get_region(title):
         return "Europe"
     else:
         return ""
+
 
 def get_version(title):
     if "(v1.0)" in title:
@@ -46,18 +47,16 @@ def get_version(title):
     else:
         return 1.0
 
-PLATFORM_ID = {
-    "Sony Playstation": 10
-}
+
+PLATFORM_ID = {"Sony Playstation": 10}
+
 
 def main():
-
     # Convert database to json
     platform = "Sony Playstation"
 
     database = []
     if not os.path.isfile(platform + ".json"):
-
         # Load Database csv file into memory
         database_csv = platform + ".csv"
 
@@ -77,39 +76,39 @@ def main():
                 players = game_info[8]
                 description = game_info[9]
 
-                database.append({
-                    # Original fields
-                    "name": name,
-                    "full_name": full_name,
-                    "year": year,
-                    "rating": rating,
-                    "publisher": publisher,
-                    "developer": developer,
-                    "genre": genre,
-                    "score": score,
-                    "players": players,
-                    "description": description,
+                database.append(
+                    {
+                        # Original fields
+                        "name": name,
+                        "full_name": full_name,
+                        "year": year,
+                        "rating": rating,
+                        "publisher": publisher,
+                        "developer": developer,
+                        "genre": genre,
+                        "score": score,
+                        "players": players,
+                        "description": description,
+                        # rom collection browser fields
+                        "title": name,
+                        "originalTitle": "",
+                        "alternateTitle": "",
+                        "platform": platform,
+                        "plot": description,
+                        "detailUrl": "",
+                        "maxPlayer": PLAYERS_LOOKUP[players],
+                        "region": get_region(full_name),
+                        "media": "",
+                        "perspective": "",
+                        "controller": "",
+                        "version": get_version(full_name),
+                        "votes": 0,
+                        "isFavorite": 0,
+                        "launchCount": 0,
+                    }
+                )
 
-                    # rom collection browser fields
-                    "title": name,
-                    "originalTitle": "",
-                    "alternateTitle": "",
-                    "platform": platform,
-                    "plot": description,
-                    "detailUrl": "",
-                    "maxPlayer": PLAYERS_LOOKUP[players],
-                    "region": get_region(full_name),
-                    "media": "",
-                    "perspective": "",
-                    "controller": "",
-                    "version": get_version(full_name),
-                    "votes": 0,
-                    "isFavorite": 0,
-                    "launchCount": 0
-                })
-
-
-        database_json = json.dumps(database, indent=2, separators=(',', ':'))
+        database_json = json.dumps(database, indent=2, separators=(",", ":"))
 
         with open(platform + ".json", "w") as json_file:
             json_file.write(database_json)
@@ -123,7 +122,6 @@ def main():
         curr_year = curr_game["year"]
 
         if "thegamesdb_id" not in curr_game.keys():
-
             # Clean up the `curr_name` field
             curr_name = curr_name.replace("  Disc 1", "")
             curr_name = curr_name.replace("  Disc 2", "")
@@ -134,7 +132,11 @@ def main():
             curr_name = curr_name.replace(" - ", ": ")
 
             # Get the game data from thegamesdb
-            params = {"apikey": API_KEY, "name": curr_name, "platform": PLATFORM_ID[platform]}
+            params = {
+                "apikey": API_KEY,
+                "name": curr_name,
+                "platform": PLATFORM_ID[platform],
+            }
             r = requests.get(url=GAME_NAME_URL, params=params)
 
             # extracting data in json format
@@ -147,7 +149,10 @@ def main():
 
                 if db_release_date is not None:
                     db_release_year = db_release_date.split("-")[0]
-                    if PLATFORM_ID[platform] == curr_match["platform"] and curr_year == db_release_year:
+                    if (
+                        PLATFORM_ID[platform] == curr_match["platform"]
+                        and curr_year == db_release_year
+                    ):
                         scraper_matches.append(curr_match)
 
             if len(scraper_matches) == 1:
@@ -157,18 +162,21 @@ def main():
                 if fuzz.ratio(curr_name, game_db_name) >= 95:
                     database[counter]["thegamesdb_id"] = games_db_id
 
-                    database_json = json.dumps(database, indent=2, separators=(',', ':'))
+                    database_json = json.dumps(
+                        database, indent=2, separators=(",", ":")
+                    )
                     with open(platform + ".json", "w") as json_file:
                         json_file.write(database_json)
                 else:
-                    print(f"Skipping Orig:{curr_name}, GDB:{game_db_name}, ID:{games_db_id} ")
+                    print(
+                        f"Skipping Orig:{curr_name}, GDB:{game_db_name}, ID:{games_db_id} "
+                    )
 
             if data["remaining_monthly_allowance"] <= 100:
                 break
 
         else:
             print(f"Already processed: {curr_name}")
-
 
     if False:
         # Create a list from the dictionary values
@@ -179,7 +187,7 @@ def main():
         for file in files:
             if file.upper().endswith(".PBP"):
                 game_name = os.path.splitext(file)[0]
-                game_name = re.sub("\(USA\)", "", game_name)
+                game_name = re.sub(r"\(USA\)", "", game_name)
                 game_name = game_name.strip()
                 best_match = process.extractOne(game_name, games_list)
                 best_match_name = best_match[0]
@@ -199,8 +207,10 @@ def main():
                 potential_matches = data["data"]["games"]
 
                 scraper_matches = [
-                    curr_match for curr_match in potential_matches
-                    if curr_match["release_date"].split("-")[0] == curr_year]
+                    curr_match
+                    for curr_match in potential_matches
+                    if curr_match["release_date"].split("-")[0] == curr_year
+                ]
 
                 if len(scraper_matches) == 1:
                     games_db_id = scraper_matches[0]["id"]
@@ -210,5 +220,6 @@ def main():
 
     return
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     sys.exit(main())

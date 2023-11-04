@@ -1,0 +1,11 @@
+fuzzywuzzy
+igdb-api-v4
+lxml
+pandas
+pymysql
+pysqlite3
+python-Levenshtein
+python-steamgriddb
+requests
+sqlalchemy==1.4.39
+xmltodict
