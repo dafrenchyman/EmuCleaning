@@ -18,6 +18,8 @@ PLATFORM_LOOKUP = {
     "gbc": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy Color (20230402-224108).dat",
     "gc": "",
     "psx": "",
+    "ngp": f"{NO_INTRO_ROOT}/No-Intro/SNK - NeoGeo Pocket (20230307-173713).dat",
+    "ngpc": f"{NO_INTRO_ROOT}/No-Intro/SNK - NeoGeo Pocket Color (20230408-021339).dat",
 }
 REG_EX_COUNTRIES = (
     r"( \(("
@@ -28,13 +30,13 @@ REG_EX_COUNTRIES = (
     r"Sample|Sample\s?\d|"
     r"Rev A|"
     r"Rev B|"
-    r"Rev|Rev\s?\d|"
-    r"Rev|Rev\s?\d.\d|"
-    r"V\d|"
-    r"V\d.\d|"
-    r"v\d|"
-    r"v\d.\d|"
-    r"Disc\s?\d|"
+    r"Rev|Rev\s?\d+|"
+    r"Rev|Rev\s?\d.\d+|"
+    r"V\d+|"
+    r"V\d.\d+|"
+    r"v\d+|"
+    r"v\d.\d+|"
+    r"Disc\s?\d+|"
     r"SGB Enhanced\, GB Compatible|"
     r"Unknown|"
     r"Aftermarket|"
@@ -135,6 +137,7 @@ class NoIntroDb:
         return
 
     def get_game_info_from_filename(self, full_filename_path):
+        # TODO: Handle zip files
         offset = 0
 
         # Nes roms

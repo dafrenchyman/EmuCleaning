@@ -33,6 +33,12 @@ TYPE_EXPRESSION = (
 ALLOWED_TYPES = ["ARCADE", "UNL"]  # "REV", "BETA", "PROTO"
 
 START_OF_TEXT = {
+    "atari2600": """
+collection: Atari 2600
+shortname: atari2600
+command: /bin/rom_launcher.sh atari2600 "{file.path}"
+
+""",
     "gc": """
 collection: Nintendo Gamecube
 shortname: gc
@@ -49,6 +55,18 @@ command: /bin/rom_launcher.sh snes "{file.path}"
 collection: Nintendo (NES)
 shortname: nes
 command: /bin/rom_launcher.sh nes "{file.path}"
+
+""",
+    "ngp": """
+collection: SNK Neo Geo Pocket
+shortname: ngp
+command: /bin/rom_launcher.sh ngp "{file.path}"
+
+""",
+    "ngpc": """
+collection: SNK Neo Geo Pocket Color
+shortname: ngpc
+command: /bin/rom_launcher.sh ngpc "{file.path}"
 
 """,
     "sega32x": """
@@ -85,6 +103,12 @@ command: /bin/rom_launcher.sh gbc "{file.path}"
 collection: Sony Playstation
 shortname: psx
 command: /bin/rom_launcher.sh psx "{file.path}"
+
+""",
+    "xbox": """
+collection: Microsoft Xbox
+shortname: xbox
+command: /bin/rom_launcher.sh xbox "{file.path}"
 
 """,
 }

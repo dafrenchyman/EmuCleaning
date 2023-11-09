@@ -11,6 +11,7 @@ THEGAMESDB_SQL_DUMP = "http://cdn.thegamesdb.net/tgdb_dump.zip"
 
 PLATFORM_TO_DB_NAME = {
     "3do": "3do",
+    "atari2600": "atari-2600",
     "dreamcast": "sega-dreamcast",
     "gameandwatch": "game-and-watch",
     "gamegear": "sega-game-gear",
@@ -25,6 +26,8 @@ PLATFORM_TO_DB_NAME = {
     "n64dd": "nintendo-64",
     "nds": "nintendo-ds",
     "nes": "nintendo-entertainment-system-nes",
+    "ngp": "neo-geo-pocket",
+    "ngpc": "neo-geo-pocket-color",
     "ps2": "sony-playstation-2",
     "ps3": "sony-playstation-3",
     "ps4": "sony-playstation-4",

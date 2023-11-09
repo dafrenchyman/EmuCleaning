@@ -13,7 +13,11 @@ from pegasus.pegasus_text_builder import PegasusTextBuilder
 # Using the same system names found here:
 #   https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#game-system-customizations
 ROM_FOLDER_PATHS = {
-    "gc": "/ROMs/gc/",
+    "xbox": "/ROMs/xbox/",
+    # "atari2600": "/ROMs/atari2600/",
+    # "ngp": "/ROMs/ngp/",
+    # "ngpc": "/ROMs/ngpc/",
+    # "gc": "/ROMs/gc/",
     # "nes": "/ROMs/nes/",
     # "snes": "/ROMs/snes/",
     # "sega32x": "/ROMs/sega32x/",
@@ -54,7 +58,7 @@ class RomProcessor:
     def __init__(self, platform: str, rom_folder: str) -> None:
         self.platform = platform
         self.rom_folder_path = rom_folder
-        if self.platform not in ("psx", "gc"):
+        if self.platform not in ("psx", "gc", "atari2600", "ngp", "ngpc", "xbox"):
             self.no_intro_db = NoIntroDb(platform=platform)
 
         self.internet_game_db = InternetGameDb(platform)
@@ -77,7 +81,7 @@ class RomProcessor:
             if os.path.isdir(full_filename_path):
                 continue
 
-            if self.platform not in ("psx", "gc"):
+            if self.platform not in ("psx", "gc", "atari2600", "ngp", "ngpc", "xbox"):
                 game_no_intro = self.no_intro_db.get_game_info_from_filename(
                     full_filename_path
                 )
@@ -167,8 +171,6 @@ def main():
         )
         rom_processor.process_roms()
         rom_processor.write_pegasus_file()
-
-    print("test")
 
     return
 
