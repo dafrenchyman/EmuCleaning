@@ -16,8 +16,6 @@ PLATFORM_LOOKUP = {
     "gba": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy Advance (20230412-152643).dat",
     "gb": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy (20230413-112139).dat",
     "gbc": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy Color (20230402-224108).dat",
-    "gc": "",
-    "psx": "",
     "ngp": f"{NO_INTRO_ROOT}/No-Intro/SNK - NeoGeo Pocket (20230307-173713).dat",
     "ngpc": f"{NO_INTRO_ROOT}/No-Intro/SNK - NeoGeo Pocket Color (20230408-021339).dat",
 }
@@ -123,6 +121,10 @@ class NoIntroDb:
 
         with open(PLATFORM_LOOKUP[platform]) as df:
             self.no_intro_dat_file = xmltodict.parse(df.read())
+
+    @staticmethod
+    def platform_available(platform: str) -> bool:
+        return platform in PLATFORM_LOOKUP.keys()
 
     def get_game_info_from_dat(self, hash, dat):
         for game in dat["datafile"]["game"]:
