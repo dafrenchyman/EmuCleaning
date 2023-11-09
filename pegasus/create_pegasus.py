@@ -88,6 +88,7 @@ class RomProcessor:
         return
 
     def process_rom(self, full_filename_path, filename):
+        game_name_clean = None
         if NoIntroDb.platform_available(self.platform):
             rom_file_name = full_filename_path
             # Check if it's a zip file
@@ -103,12 +104,9 @@ class RomProcessor:
                         return
 
             game_no_intro = self.no_intro_db.get_game_info_from_filename(rom_file_name)
-
             game_name_clean = NoIntroDb.get_regular_name_from_no_intro(game_no_intro)
 
-            if game_name_clean is None:
-                return
-        else:
+        if game_name_clean is None:
             game_no_intro = {}
             game_name_clean = NoIntroDb.get_regular_name_from_no_intro(
                 {"@name": Path(filename).stem}
