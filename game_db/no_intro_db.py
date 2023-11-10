@@ -6,18 +6,18 @@ import xmltodict as xmltodict
 NO_INTRO_ROOT = "/mnt/SnapSsdArray_01/SnapDisk_4TB_27/Consoles/DatFiles/No-Intro Love Pack (Standard) (2023-04-13)"
 PLATFORM_LOOKUP = {
     # "NES": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo Entertainment System (Headered) (20230413-090934).dat",
-    "nes": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo Entertainment System (Headerless) (20230413-090934).dat",
-    "snes": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Super Nintendo Entertainment System (20230409-114707).dat",
-    "sega32x": f"{NO_INTRO_ROOT}/No-Intro/Sega - 32X (20230308-124118).dat",
     "gameandwatch": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game & Watch (20211228-000000).dat",
+    "gb": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy (20230413-112139).dat",
+    "gba": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy Advance (20230412-152643).dat",
+    "gbc": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy Color (20230402-224108).dat",
+    "genesis": f"{NO_INTRO_ROOT}/No-Intro/Sega - Mega Drive - Genesis (20230413-082302).dat",
     "n64": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo 64 (BigEndian) (20230410-124148).dat",
     "n64dd": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo 64DD (20230131-042611).dat",
-    "genesis": f"{NO_INTRO_ROOT}/No-Intro/Sega - Mega Drive - Genesis (20230413-082302).dat",
-    "gba": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy Advance (20230412-152643).dat",
-    "gb": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy (20230413-112139).dat",
-    "gbc": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy Color (20230402-224108).dat",
+    "nes": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo Entertainment System (Headerless) (20230413-090934).dat",
     "ngp": f"{NO_INTRO_ROOT}/No-Intro/SNK - NeoGeo Pocket (20230307-173713).dat",
     "ngpc": f"{NO_INTRO_ROOT}/No-Intro/SNK - NeoGeo Pocket Color (20230408-021339).dat",
+    "sega32x": f"{NO_INTRO_ROOT}/No-Intro/Sega - 32X (20230308-124118).dat",
+    "snes": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Super Nintendo Entertainment System (20230409-114707).dat",
 }
 REG_EX_COUNTRIES = (
     r"( \(("

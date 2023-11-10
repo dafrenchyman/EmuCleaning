@@ -10,6 +10,7 @@ THEGAMESDB_SQL_DUMP = "http://cdn.thegamesdb.net/tgdb_dump.zip"
 
 
 PLATFORM_TO_DB_NAME = {
+    "arcade": "arcade",
     "3do": "3do",
     "atari2600": "atari-2600",
     "dreamcast": "sega-dreamcast",

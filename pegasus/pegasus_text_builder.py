@@ -33,6 +33,12 @@ TYPE_EXPRESSION = (
 ALLOWED_TYPES = ["ARCADE", "UNL"]  # "REV", "BETA", "PROTO"
 
 START_OF_TEXT = {
+    "arcade": """
+collection: Arcade
+shortname: arcade
+command: /bin/rom_launcher.sh arcade "{file.path}"
+
+""",
     "atari2600": """
 collection: Atari 2600
 shortname: atari2600
@@ -157,7 +163,15 @@ class PegasusTextBuilder:
                 return self.regions[region]
         return ""
 
-    def add_entry(self, filename: str, game_db, internet_game_db, no_intro, images):
+    def add_entry(
+        self,
+        filename: str,
+        game_db,
+        internet_game_db,
+        no_intro,
+        images,
+        game_title=None,
+    ):
         # region
         release = no_intro.get("release", None)
         region = None
@@ -175,7 +189,8 @@ class PegasusTextBuilder:
         genre = self.the_games_db.get_genres_by_game_id(game_db["id"])
         genre = "\n  ".join([i["genre"] for i in genre.values()])
 
-        game_title = os.path.splitext(os.path.basename(filename))[0]
+        if game_title is None:
+            game_title = os.path.splitext(os.path.basename(filename))[0]
 
         description = game_db.get("overview", "")
         if description is None:

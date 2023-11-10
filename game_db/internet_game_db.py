@@ -15,6 +15,7 @@ API_KEY = os.getenv("IGDB_API_KEY")
 
 PLATFORM_TO_WHERE_CAUSE = {
     # "Unknown": 'search "platform_name";'
+    "arcade": 'where name = ("Arcade");',
     "3do": 'where name = ("3DO Interactive Multiplayer");',
     "atari2600": 'where name = ("Atari 2600");',
     "cdtv": 'where name = ("Commodore CDTV");',

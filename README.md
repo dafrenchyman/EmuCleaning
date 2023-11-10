@@ -43,6 +43,11 @@ Datomatic files are used to check the hashes of ROMs and get clean names for the
 - Checkmark all the stuff you want and download
 - Currently, everything is hard coded, you'll need to modify the file locations in: `game_db/no_intro_db.py`
 
+## To get arcade info files:
+
+- Go to http://adb.arcadeitalia.net/lista_mame.php and then click options and then download the `Detailed CSV`. Don't filter on anything so you can grab everything.
+- Extract the file and name it `./database/arcade.csv`
+
 ## Convert GamesDB sqldump to sqlite3
 
 - Run the `setup.sh` script in the root. it **should** take care of it.

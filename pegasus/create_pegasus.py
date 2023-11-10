@@ -5,6 +5,7 @@ import tempfile
 import zipfile
 from pathlib import Path
 
+from game_db.arcade_db import ArcadeDb
 from game_db.internet_game_db import InternetGameDb
 from game_db.no_intro_db import NoIntroDb
 from game_db.steam_grid_db import SteamGridDb
@@ -15,7 +16,8 @@ from pegasus.pegasus_text_builder import PegasusTextBuilder
 # Using the same system names found here:
 #   https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#game-system-customizations
 ROM_FOLDER_PATHS = {
-    "xbox": "/ROMs/xbox/",
+    "arcade": "/ROMs/arcade/",
+    # "xbox": "/ROMs/xbox/",
     # "atari2600": "/ROMs/atari2600/",
     # "ngp": "/ROMs/ngp/",
     # "ngpc": "/ROMs/ngpc/",
@@ -60,8 +62,14 @@ class RomProcessor:
     def __init__(self, platform: str, rom_folder: str) -> None:
         self.platform = platform
         self.rom_folder_path = rom_folder
+
+        # Setup the NoIntroDB
         if NoIntroDb.platform_available(self.platform):
             self.no_intro_db = NoIntroDb(platform=platform)
+
+        # Setup the ArcadeDD
+        if platform == "arcade":
+            self.arcade_db = ArcadeDb()
 
         self.internet_game_db = InternetGameDb(platform)
         self.the_game_db = TheGamesDbSqlite(platform)
@@ -89,6 +97,7 @@ class RomProcessor:
 
     def process_rom(self, full_filename_path, filename):
         game_name_clean = None
+        game_title = None
         if NoIntroDb.platform_available(self.platform):
             rom_file_name = full_filename_path
             # Check if it's a zip file
@@ -106,12 +115,22 @@ class RomProcessor:
             game_no_intro = self.no_intro_db.get_game_info_from_filename(rom_file_name)
             game_name_clean = NoIntroDb.get_regular_name_from_no_intro(game_no_intro)
 
+        elif self.platform == "arcade":
+            game_no_intro = {}
+            filename_no_ext = Path(filename).stem
+            game_name_clean, game_title = self.arcade_db.convert_filename_to_game_name(
+                filename_no_ext
+            )
+            # If we don't have a clean name for it, skip the game
+            if game_name_clean is None:
+                return
+
         if game_name_clean is None:
             game_no_intro = {}
             game_name_clean = NoIntroDb.get_regular_name_from_no_intro(
                 {"@name": Path(filename).stem}
             )
-        print(game_name_clean)
+        print(f"{game_name_clean}\t|\t{game_title}")
 
         # Get Games DB entry
         game_db = self.the_game_db.get_games_db_from_game_name(game_name_clean)
@@ -169,6 +188,7 @@ class RomProcessor:
                 internet_game_db=internet_game_db,
                 no_intro=game_no_intro,
                 images=all_assets,
+                game_title=game_title,
             )
 
     def write_pegasus_file(self):
