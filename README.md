@@ -52,6 +52,24 @@ Datomatic files are used to check the hashes of ROMs and get clean names for the
 
 - Run the `setup.sh` script in the root. it **should** take care of it.
 
+## Adding assets from https://emumovies.com
+
+- In the folder that has the roms for a given platform
+- Add a `.assets` folder
+- In there, add the following folders for whatever assets you have:
+  - `background`: AKA fanarts
+  - `box_back`: Back of boxes
+  - `box_front`: Front of boxes
+  - `box_full`: The whole box front/back/side
+  - `box_spine`: The spine (side) of the box
+  - `cart`: What the cart looks like
+  - `cart_label`: Just the carts label
+  - `logo`: Clear logos (png)
+  - `music`: Music for the game (I'm not sure any themes support this)
+  - `screenshot`: Game screenshot
+  - `titlescreen`: Game's titlescreen
+  - `video`: A video snap
+
 # Convert PSX bin/cue to chd
 
 This is something I wrote a while back to clean up zipped bin/cue files and convert them to chd.

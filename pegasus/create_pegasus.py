@@ -85,7 +85,7 @@ class RomProcessor:
         all_files = sorted(os.listdir(self.rom_folder_path), reverse=False)
 
         # Loop on files in folder
-        for filename in all_files:
+        for _, filename in enumerate(all_files):
             full_filename_path = os.path.join(self.rom_folder_path, filename)
 
             if os.path.isdir(full_filename_path):
