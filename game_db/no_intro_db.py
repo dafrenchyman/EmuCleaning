@@ -110,6 +110,7 @@ REG_EX_COUNTRIES = (
 
 REG_EX_LANG = r"\(((En-(US|GB)\,)+)?(\,)?(([A-Z][a-z]|[A-Z][a-z]\+[A-Z][a-z])(\,)?)+\)"
 REG_EX_DATE = r" \([0-9]{4}-[0-9]{1,2}-[0-9]{1,2}\)"
+REG_EX_EXTRAS = r"\[(SC|SL)(US)-[0-9]+ \([0-9].[0-9]+\)\]"
 
 
 class NoIntroDb:
@@ -169,7 +170,7 @@ class NoIntroDb:
         game_name = None
         if no_intro_game is not None:
             game_name = no_intro_game["@name"]
-            all_reg_ex = [REG_EX_COUNTRIES, REG_EX_LANG, REG_EX_DATE]
+            all_reg_ex = [REG_EX_COUNTRIES, REG_EX_LANG, REG_EX_DATE, REG_EX_EXTRAS]
             for replacement in all_reg_ex:
                 game_name = re.sub(replacement, "", game_name)
             if ", The" in game_name:

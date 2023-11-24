@@ -16,7 +16,7 @@ from pegasus.pegasus_text_builder import PegasusTextBuilder
 # Using the same system names found here:
 #   https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#game-system-customizations
 ROM_FOLDER_PATHS = {
-    "arcade": "/ROMs/arcade/",
+    # "arcade": "/ROMs/arcade/",
     # "xbox": "/ROMs/xbox/",
     # "atari2600": "/ROMs/atari2600/",
     # "ngp": "/ROMs/ngp/",
@@ -30,6 +30,8 @@ ROM_FOLDER_PATHS = {
     # "gba": "/ROMs/gba/",
     # "gbc": "/ROMs/gbc/",
     # "genesis": "/ROMs/genesis/",
+    # "wii": "/ROMs/wii/",
+    "ps2": "/ROMs/ps2/",
 }
 
 # Where to put the steamgriddb & thegamesdb images

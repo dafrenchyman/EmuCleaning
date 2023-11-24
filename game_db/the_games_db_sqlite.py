@@ -19,7 +19,13 @@ class TheGamesDbSqlite(TheGamesDbBase):
 
 
 def main():
-    _ = TheGamesDbSqlite(platform="snes")
+    games_db = TheGamesDbSqlite(platform="gc")
+
+    game = games_db.get_games_db_from_game_name("Skies of Arcadia Legends")
+
+    _ = games_db.download_all_art(game_db=game, art_path_root="/ROMs/.assets/")
+
+    return
 
 
 if __name__ == "__main__":

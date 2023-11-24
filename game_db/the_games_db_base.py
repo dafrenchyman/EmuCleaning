@@ -201,6 +201,12 @@ class TheGamesDbBase:
         publishers = df.set_index("index").T.to_dict("dict")
         return publishers
 
+    def get_tables(self):
+        df = pandas.read_sql(
+            "SELECT name FROM sqlite_master WHERE type='table';", self.engine
+        )
+        return df
+
     def get_artwork_from_game_id(self, game_id: int):
         df = pandas.read_sql(
             f"SELECT * FROM banners WHERE games_id = {game_id}", self.engine

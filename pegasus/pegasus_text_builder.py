@@ -30,7 +30,7 @@ NO_INTRO_REGION_LOOKUP = {
 TYPE_EXPRESSION = (
     r"(\(([Uu]nl|[Bb]eta|[Rr]ev|[Pp]roto|[Dd]emo|[Ss]ample|[Aa]rcade)([ ]([0-9]))?\))"
 )
-ALLOWED_TYPES = ["ARCADE", "UNL"]  # "REV", "BETA", "PROTO"
+ALLOWED_TYPES = ["ARCADE", "REV", "UNL"]  # , "BETA", "PROTO"
 
 START_OF_TEXT = {
     "arcade": """
@@ -105,10 +105,22 @@ shortname: gbc
 command: /bin/rom_launcher.sh gbc "{file.path}"
 
 """,
+    "ps2": """
+collection: Sony Playstation 2
+shortname: ps2
+command: /bin/rom_launcher.sh ps2 "{file.path}"
+
+""",
     "psx": """
 collection: Sony Playstation
 shortname: psx
 command: /bin/rom_launcher.sh psx "{file.path}"
+
+""",
+    "wii": """
+collection: Nintendo Wii
+shortname: wii
+command: /bin/rom_launcher.sh gc "{file.path}"
 
 """,
     "xbox": """
