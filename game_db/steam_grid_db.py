@@ -67,6 +67,8 @@ class SteamGridDb:
             if fuzz_score > 90 and fuzz_score > best_fuzz_score:
                 best_fuzz_score = fuzz_score
                 best_match_id = game.id
+            if best_fuzz_score == 100:
+                break
         return best_match_id
 
     def _get_result_from_local_db(self, endpoint, query):
@@ -85,9 +87,8 @@ class SteamGridDb:
         if df.shape[0] > 0:
             result_encoded = df["result"][0]
             results_decoded = pickle.loads(base64.b64decode(result_encoded))
-
-        if results_decoded is None:
-            results_decoded = "None"
+            if results_decoded is None:
+                results_decoded = "None"
         return results_decoded
 
     def _store_result_in_local_db(self, endpoint: str, query: any, grids: any):
@@ -108,6 +109,7 @@ class SteamGridDb:
         term,
         number_of_attempts: int = 9,
     ):
+        term = term.replace("/", " ")
         # See if the result is available locally first
         grids = self._get_result_from_local_db(
             endpoint="search_game",
@@ -127,9 +129,9 @@ class SteamGridDb:
                     self._store_result_in_local_db(
                         endpoint="search_game", query=term, grids=grids
                     )
-                except:  # noqa E722
+                except Exception as e:  # noqa E722
                     print("\tAttempt failed, trying again")
-                    time.sleep(1.0)
+                    time.sleep(5.0)
         elif grids == "None":
             grids = []
         return grids
@@ -170,7 +172,7 @@ class SteamGridDb:
                     )
                 except:  # noqa E722
                     print("\tAttempt failed, trying again")
-                    time.sleep(1.0)
+                    time.sleep(5.0)
         elif grids == "None":
             grids = None
         return grids
@@ -211,10 +213,74 @@ class SteamGridDb:
                     )
                 except Exception:
                     print("\tAttempt failed, trying again")
-                    time.sleep(1.0)
+                    time.sleep(5.0)
         elif grids == "None":
             grids = None
         return grids
+
+    def _get_heroes_by_gameid(
+        self,
+        game_ids: List[int],
+        styles: List[StyleType] = [],
+        mimes: List[MimeType] = [],
+        types: List[ImageType] = [],
+        is_nsfw: bool = False,
+        is_humor: bool = False,
+        number_of_attemps: int = 9,
+    ):
+        # See if the result is available locally first
+        grids = self._get_result_from_local_db(
+            endpoint="get_heroes_by_gameid",
+            query=game_ids,
+        )
+
+        if grids is None:
+            curr_attempt = 1
+            successfully_processed = False
+            while not successfully_processed and curr_attempt <= number_of_attemps:
+                try:
+                    grids = self.sgdb.get_heroes_by_gameid(
+                        game_ids=game_ids,
+                        styles=styles,
+                        mimes=mimes,
+                        types=types,
+                        is_nsfw=is_nsfw,
+                        is_humor=is_humor,
+                    )
+                    curr_attempt += 1
+                    successfully_processed = True
+                    self._store_result_in_local_db(
+                        endpoint="get_heroes_by_gameid", query=game_ids, grids=grids
+                    )
+                except Exception:
+                    print("\tAttempt failed, trying again")
+                    time.sleep(5.0)
+        elif grids == "None":
+            grids = None
+        return grids
+
+    def _download_image(self, grid, art_path, image_type, filename_links):
+        image_url = grid.url
+        extension = Path(image_url).suffix
+        image_filename = str(grid.id) + extension
+
+        image_path = os.path.join(art_path, image_type, image_filename)
+        if not os.path.exists(os.path.dirname(image_path)):
+            os.makedirs(os.path.dirname(image_path))
+
+        have_image = False
+        if not os.path.isfile(image_path):
+            image_web = requests.get(image_url)
+            if image_web.status_code == 200:
+                with open(image_path, "wb") as output:
+                    output.write(image_web.content)
+                    have_image = True
+        else:  # already downloaded
+            have_image = True
+
+        if have_image:
+            filename_links[image_type].append(image_path)
+        return
 
     def download_all_art(self, game_id: int, art_path_root: str):
         art_path = art_path_root + "steamgriddb/"
@@ -228,6 +294,7 @@ class SteamGridDb:
             "poster": [],
             "poster_no_logo": [],
             "clearlogo": [],
+            "fanart": [],
         }
         if grids is not None:
             for grid in grids:
@@ -245,26 +312,8 @@ class SteamGridDb:
                 else:
                     continue
 
-                image_url = grid.url
-                extension = Path(image_url).suffix
-                image_filename = str(grid.id) + extension
-
-                image_path = os.path.join(art_path, image_type, image_filename)
-                if not os.path.exists(os.path.dirname(image_path)):
-                    os.makedirs(os.path.dirname(image_path))
-
-                have_image = False
-                if not os.path.isfile(image_path):
-                    image_web = requests.get(image_url)
-                    if image_web.status_code == 200:
-                        with open(image_path, "wb") as output:
-                            output.write(image_web.content)
-                            have_image = True
-                else:  # already downloaded
-                    have_image = True
-
-                if have_image:
-                    filename_links[image_type].append(image_path)
+                # Download
+                self._download_image(grid, art_path, image_type, filename_links)
 
         logos = self._get_logos_by_gameid([game_id])
         if logos is not None:
@@ -273,25 +322,23 @@ class SteamGridDb:
                     image_type = "clearlogo"
                 else:
                     continue
-                image_url = logo.url
-                extension = Path(image_url).suffix
-                image_filename = str(logo.id) + extension
+                # Download
+                self._download_image(logo, art_path, image_type, filename_links)
 
-                image_path = os.path.join(art_path, image_type, image_filename)
-                if not os.path.exists(os.path.dirname(image_path)):
-                    os.makedirs(os.path.dirname(image_path))
-
-                have_image = False
-                if not os.path.isfile(image_path):
-                    image_web = requests.get(image_url)
-                    if image_web.status_code == 200:
-                        with open(image_path, "wb") as output:
-                            output.write(image_web.content)
-                            have_image = True
-                else:  # already downloaded
-                    have_image = True
-
-                if have_image:
-                    filename_links[image_type].append(image_path)
+        heroes = self._get_heroes_by_gameid([game_id])
+        if heroes is not None:
+            for hero in heroes:
+                # Download
+                self._download_image(hero, art_path, "fanart", filename_links)
 
         return filename_links
+
+
+def main():
+    db = SteamGridDb(platform="xbox")
+    game_id = db.get_game_id_by_name("Dark Angel")
+    game_id
+
+
+if __name__ == "__main__":
+    main()

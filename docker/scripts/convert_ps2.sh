@@ -15,31 +15,40 @@ for zipFile in *.7z; do
 	nameInZip="$(basename "$gameFileName")"
 	extensionInZip="${gameFileName##*.}"
 	zipBaseName="${nameInZip%.*}"
-	finalCsoFilename="${csoDestinationLocation}${gameName} [${zipBaseName}].cso"
+	finalFilename="${destinationLocation}${gameName} [${zipBaseName}].chd"
 
 	echo "Source file: ${zipSourceLocation}${zipFile}"
 	echo "Original filename: ${gameFileName}"
 	echo "Extension: ${extensionInZip}"
-	echo "Destination: ${finalCsoFilename}"
+	echo "Destination: ${finalFilename}"
 
-	# If we've already processed the cso file skip it
-	if [[ -f "$finalCsoFilename" ]]; then
-		echo "Skipping game already prepared: ${finalCsoFilename}"
+	# If we've already processed the file skip it
+	if [[ -f "$finalFilename" ]]; then
+		echo "Skipping game already prepared: ${finalFilename}"
 		continue
 	fi
 
-	mkdir -p "${csoDestinationLocation}${gameName}"
+	mkdir -p "${destinationLocation}${gameName}"
 	echo "unzipping..."
-	7z x -o"${csoDestinationLocation}${gameName}" "${zipFile}"
+	7z x -o"${destinationLocation}${gameName}" "${zipFile}"
 	echo "converting..."
 
-	cd "${csoDestinationLocation}${gameName}"
+	cd "${destinationLocation}${gameName}"
+
+	# If there are > 1 binFile, we can't process it yet
+	numBinFiles=`find "${destinationLocation}${gameName}/" -mindepth 1 -maxdepth 1 -type f -name "*.bin" -printf x | wc -c`
+	if [ $numBinFiles -ge 2 ]; then
+	  echo "Cannot process cue/bin with > 1 bin file"
+	  failedToProcess+=("${zipFile}")
+    continue
+  fi
+
 	for binFile in *.bin; do
 		[ -f "$binFile" ] || break
 		echo "${binFile}"
 		binName="$(basename "$binFile" .bin)"
 		cueFilename="${binName}.cue"
-		echo -e "FILE\"${gameFileName}\" BINARY\nTRACK 01 MODE2/2352\nINDEX 01 00:00:00" > "${csoDestinationLocation}${gameName}/${cueFilename}"
+		echo -e "FILE\"${gameFileName}\" BINARY\nTRACK 01 MODE2/2352\nINDEX 01 00:00:00" > "${destinationLocation}${gameName}/${cueFilename}"
 		bchunk "${binName}.bin" "${binName}.cue" "${binName}"
 
 		# bchunk adds a 01 (for the track number to the filename). Need to remove that
@@ -53,18 +62,24 @@ for zipFile in *.7z; do
 		newIsoFileName="${gameName} [${isoName}].iso"
 		mv "${isoFile}" "${newIsoFileName}"
 
-		newCsoFileName="$(basename "$newIsoFileName" .iso).cso"
-		ciso 9 "${newIsoFileName}" "${newCsoFileName}"
-		mv "${newCsoFileName}" "../${newCsoFileName}"
+		newFileName="$(basename "$newIsoFileName" .iso).chd"
+		chdman createcd -o "${newFileName}" -i "${newIsoFileName}"
+		# ciso 9 "${newIsoFileName}" "${newFileName}"
+		mv "${newFileName}" "../${newFileName}"
 
 		# Delete the iso file
 		rm "${newIsoFileName}"
 	done
-	#chdman createcd --force -i "${gameName}/${cueFile}" -o "../chd/${gameName}.chd"
 	echo "cleanup..."
 	cd ..
-	rm -rf "${csoDestinationLocation}${gameName}"
+	rm -rf "${destinationLocation}${gameName}"
 	cd "${zipSourceLocation}"
+
+done
+
+echo "The following files couldn't be processed:"
+for i in "${failedToProcess[@]}"; do
+    echo "$i"
 done
 
 echo "All done."

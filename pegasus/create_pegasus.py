@@ -16,22 +16,22 @@ from pegasus.pegasus_text_builder import PegasusTextBuilder
 # Using the same system names found here:
 #   https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#game-system-customizations
 ROM_FOLDER_PATHS = {
-    # "arcade": "/ROMs/arcade/",
-    # "xbox": "/ROMs/xbox/",
-    # "atari2600": "/ROMs/atari2600/",
-    # "ngp": "/ROMs/ngp/",
-    # "ngpc": "/ROMs/ngpc/",
-    # "gc": "/ROMs/gc/",
-    # "nes": "/ROMs/nes/",
-    # "snes": "/ROMs/snes/",
-    # "sega32x": "/ROMs/sega32x/",
-    # "psx": "/ROMs/psx/",
-    # "gb": "/ROMs/gb/",
-    # "gba": "/ROMs/gba/",
-    # "gbc": "/ROMs/gbc/",
-    # "genesis": "/ROMs/genesis/",
-    # "wii": "/ROMs/wii/",
+    "arcade": "/ROMs/arcade/",
+    "atari2600": "/ROMs/atari2600/",
+    "gb": "/ROMs/gb/",
+    "gba": "/ROMs/gba/",
+    "gbc": "/ROMs/gbc/",
+    "gc": "/ROMs/gc/",
+    "genesis": "/ROMs/genesis/",
+    "nes": "/ROMs/nes/",
+    "ngp": "/ROMs/ngp/",
+    "ngpc": "/ROMs/ngpc/",
     "ps2": "/ROMs/ps2/",
+    "psx": "/ROMs/psx/",
+    "snes": "/ROMs/snes/",
+    "sega32x": "/ROMs/sega32x/",
+    "wii": "/ROMs/wii/",
+    "xbox": "/ROMs/xbox/",
 }
 
 # Where to put the steamgriddb & thegamesdb images
@@ -136,6 +136,8 @@ class RomProcessor:
 
         # Get Games DB entry
         game_db = self.the_game_db.get_games_db_from_game_name(game_name_clean)
+        if game_db is not None:
+            print(f'\tBest Match: {game_db["game_title"]}')
 
         # Get Internet Game Database ID
         internet_game_db = self.internet_game_db.get_game_from_game_name(
@@ -192,6 +194,8 @@ class RomProcessor:
                 images=all_assets,
                 game_title=game_title,
             )
+        else:
+            print("\tUnable to find game ")
 
     def write_pegasus_file(self):
         with open(f"{self.rom_folder_path}metadata.pegasus.txt", "w") as output:

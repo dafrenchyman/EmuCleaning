@@ -244,7 +244,7 @@ class TheGamesDbBase:
             # Fix the game name stuff
             game = self._fix_game_data(game)
             fuzz_score = fuzz.ratio(game_name, game["game_title"])
-            if fuzz_score > 90 and fuzz_score > best_fuzz_score:
+            if fuzz_score > 50 and fuzz_score > best_fuzz_score:
                 best_fuzz_score = fuzz_score
                 best_fuzz_location = key
 
