@@ -33,6 +33,12 @@ TYPE_EXPRESSION = (
 ALLOWED_TYPES = ["ARCADE", "REV", "UNL"]  # , "BETA", "PROTO"
 
 START_OF_TEXT = {
+    "amiga": """
+collection: Commodore Amiga
+shortname: amiga
+command: /bin/rom_launcher.sh amiga "{file.path}"
+
+""",
     "arcade": """
 collection: Arcade
 shortname: arcade
@@ -45,40 +51,40 @@ shortname: atari2600
 command: /bin/rom_launcher.sh atari2600 "{file.path}"
 
 """,
-    "gc": """
-collection: Nintendo Gamecube
-shortname: gc
-command: /bin/rom_launcher.sh gc "{file.path}"
+    "atari5200": """
+collection: Atari 5200
+shortname: atari5200
+command: /bin/rom_launcher.sh atari5200 "{file.path}"
 
 """,
-    "snes": """
-collection: Super Nintendo (SNES)
-shortname: snes
-command: /bin/rom_launcher.sh snes "{file.path}"
+    "atari7800": """
+collection: Atari 7800
+shortname: atari7800
+command: /bin/rom_launcher.sh atari7800 "{file.path}"
 
 """,
-    "nes": """
-collection: Nintendo (NES)
-shortname: nes
-command: /bin/rom_launcher.sh nes "{file.path}"
+    "atarijaguar": """
+collection: Atari Jaguar
+shortname: atarijaguar
+command: /bin/rom_launcher.sh atarijaguar "{file.path}"
 
 """,
-    "ngp": """
-collection: SNK Neo Geo Pocket
-shortname: ngp
-command: /bin/rom_launcher.sh ngp "{file.path}"
+    "atarilynx": """
+collection: Atari Lynx
+shortname: atarilynx
+command: /bin/rom_launcher.sh atarilynx "{file.path}"
 
 """,
-    "ngpc": """
-collection: SNK Neo Geo Pocket Color
-shortname: ngpc
-command: /bin/rom_launcher.sh ngpc "{file.path}"
+    "atarist": """
+collection: Atari ST
+shortname: atarist
+command: /bin/rom_launcher.sh atarist "{file.path}"
 
 """,
-    "sega32x": """
-collection: Sega 32X
-shortname: sega32x
-command: /bin/rom_launcher.sh sega32x "{file.path}"
+    "colecovision": """
+collection: Coleco ColecoVision
+shortname: colecovision
+command: /bin/rom_launcher.sh colecovision "{file.path}"
 
 """,
     "genesis": """
@@ -105,6 +111,42 @@ shortname: gbc
 command: /bin/rom_launcher.sh gbc "{file.path}"
 
 """,
+    "gc": """
+collection: Nintendo Gamecube
+shortname: gc
+command: /bin/rom_launcher.sh gc "{file.path}"
+
+""",
+    "n64": """
+collection: Nintendo 64
+shortname: n64
+command: /bin/rom_launcher.sh n64 "{file.path}"
+
+""",
+    "neogeo": """
+collection: SNK Neo Geo
+shortname: neogeo
+command: /bin/rom_launcher.sh neogeo "{file.path}"
+
+""",
+    "nes": """
+collection: Nintendo (NES)
+shortname: nes
+command: /bin/rom_launcher.sh nes "{file.path}"
+
+""",
+    "ngp": """
+collection: SNK Neo Geo Pocket
+shortname: ngp
+command: /bin/rom_launcher.sh ngp "{file.path}"
+
+""",
+    "ngpc": """
+collection: SNK Neo Geo Pocket Color
+shortname: ngpc
+command: /bin/rom_launcher.sh ngpc "{file.path}"
+
+""",
     "ps2": """
 collection: Sony Playstation 2
 shortname: ps2
@@ -115,6 +157,30 @@ command: /bin/rom_launcher.sh ps2 "{file.path}"
 collection: Sony Playstation
 shortname: psx
 command: /bin/rom_launcher.sh psx "{file.path}"
+
+""",
+    "sega32x": """
+collection: Sega 32X
+shortname: sega32x
+command: /bin/rom_launcher.sh sega32x "{file.path}"
+
+""",
+    "snes": """
+collection: Super Nintendo (SNES)
+shortname: snes
+command: /bin/rom_launcher.sh snes "{file.path}"
+
+""",
+    "snes_widescreen": """
+collection: Super Nintendo (SNES) Widescreen
+shortname: snes_widescreen
+command: /bin/rom_launcher.sh snes_widescreen "{file.path}"
+
+""",
+    "virtualboy": """
+collection: Nintendo Virtual Boy
+shortname: virtualboy
+command: /bin/rom_launcher.sh virtualboy "{file.path}"
 
 """,
     "wii": """

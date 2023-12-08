@@ -2,6 +2,8 @@
 zipSourceLocation="/ROMs/7zipped_ps2/"
 csoDestinationLocation="/ROMS/ps2/"
 
+declare -a failedToProcess=()
+
 cd "${zipSourceLocation}"
 for zipFile in *.7z; do
 	gameName="$(basename "$zipFile" .7z)"
@@ -30,7 +32,7 @@ for zipFile in *.7z; do
 
 	mkdir -p "${destinationLocation}${gameName}"
 	echo "unzipping..."
-	7z x -o"${destinationLocation}${gameName}" "${zipFile}"
+	7z x -mmt16 -o"${destinationLocation}${gameName}" "${zipFile}"
 	echo "converting..."
 
 	cd "${destinationLocation}${gameName}"

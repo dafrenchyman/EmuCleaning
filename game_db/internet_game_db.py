@@ -15,10 +15,17 @@ API_KEY = os.getenv("IGDB_API_KEY")
 
 PLATFORM_TO_WHERE_CAUSE = {
     # "Unknown": 'search "platform_name";'
-    "arcade": 'where name = ("Arcade");',
     "3do": 'where name = ("3DO Interactive Multiplayer");',
+    "amiga": 'where name = ("Amiga");',
+    "arcade": 'where name = ("Arcade");',
     "atari2600": 'where name = ("Atari 2600");',
+    "atari5200": 'where name = ("Atari 5200");',
+    "atari7800": 'where name = ("Atari 7800");',
+    "atarijaguar": 'where name = ("Atari Jaguar");',
+    "atarilynx": 'where name = ("Atari Lynx");',
+    "atarist": 'where name = ("Atari ST/STE");',
     "cdtv": 'where name = ("Commodore CDTV");',
+    "colecovision": 'where name = ("ColecoVision");',
     "cpet": 'where name = ("Commodore PET");',
     "dreamcast": 'where name = ("Dreamcast");',
     "gameandwatch": 'where name = ("Game & Watch");',
@@ -33,6 +40,7 @@ PLATFORM_TO_WHERE_CAUSE = {
     "n64": 'where name = ("Nintendo 64");',
     "n64dd": 'where name = ("Nintendo 64DD");',
     "nds": 'where name = ("Nintendo DSi", "Nintendo DS");',
+    "neogeo": 'where name = ("Neo Geo AES");',
     "nes": 'where name = ("Nintendo Entertainment System");',
     "ngp": 'where name = ("Neo Geo Pocket");',
     "ngpc": 'where name = ("Neo Geo Pocket Color");',
@@ -50,7 +58,9 @@ PLATFORM_TO_WHERE_CAUSE = {
     "segacd": 'where name = ("Sega CD");',
     "segapico": 'where name = ("Sega Pico")',
     "snes": 'where name = ("Super Nintendo Entertainment System", "Super Famicom");',
+    "snes_widescreen": 'where name = ("Super Nintendo Entertainment System", "Super Famicom");',
     "switch": 'where name = ("Nintendo Switch");',
+    "virtualboy": 'where name = ("Virtual Boy");',
     "wii": 'where name = ("Wii");',
     "wiiu": 'where name = ("WiiU");',
     "xbox": 'where name = ("Xbox");',
@@ -80,6 +90,8 @@ class InternetGameDb:
 
         # Need the platform id to do lookups later
         self.platform_id = self.get_platform_id_by_name(platform)
+        if len(self.platform_id) == 0:
+            raise NotImplementedError(f"Platform {platform} not found in IGDB")
         return
 
     def __del__(self):
@@ -209,7 +221,7 @@ class InternetGameDb:
 
 
 def main():
-    db = InternetGameDb(platform="snes")
+    db = InternetGameDb(platform="atarist")
     game = db.get_game_from_game_name("Super Mario World")
     game
 

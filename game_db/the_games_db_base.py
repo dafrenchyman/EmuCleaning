@@ -10,9 +10,16 @@ THEGAMESDB_SQL_DUMP = "http://cdn.thegamesdb.net/tgdb_dump.zip"
 
 
 PLATFORM_TO_DB_NAME = {
-    "arcade": "arcade",
     "3do": "3do",
+    "amiga": "amiga",
+    "arcade": "arcade",
     "atari2600": "atari-2600",
+    "atari5200": "atari-5200",
+    "atari7800": "atari-7800",
+    "atarijaguar": "atari-jaguar",
+    "atarilynx": "atari-lynx",
+    "atarist": "atari-st",
+    "colecovision": "colecovision",
     "dreamcast": "sega-dreamcast",
     "gameandwatch": "game-and-watch",
     "gamegear": "sega-game-gear",
@@ -26,6 +33,7 @@ PLATFORM_TO_DB_NAME = {
     "n64": "nintendo-64",
     "n64dd": "nintendo-64",
     "nds": "nintendo-ds",
+    "neogeo": "neogeo",
     "nes": "nintendo-entertainment-system-nes",
     "ngp": "neo-geo-pocket",
     "ngpc": "neo-geo-pocket-color",
@@ -40,9 +48,13 @@ PLATFORM_TO_DB_NAME = {
     "sega32x": "sega-32x",
     "segacd": "sega-cd",
     "snes": "super-nintendo-snes",
+    "snes_widescreen": "super-nintendo-snes",
     "switch": "nintendo-switch",
     "wii": "nintendo-wii",
     "wiiu": "nintendo-wii-u",
+    "virtualboy": "nintendo-virtual-boy",
+    "wonderswan": "bandia-wonderswan",
+    "wonderswancolor": "bandia-wonderswan-color",
     "xbox": "microsoft-xbox",
     "xbox360": "microsoft-xbox-360",
     "xboxone": "microsoft-xbox-one",
@@ -66,6 +78,8 @@ class TheGamesDbBase:
         # Load the platform
         self.platform = platform
         self.platform_id = self.get_platform_id_by_alias(PLATFORM_TO_DB_NAME[platform])
+        if self.platform_id is None:
+            raise NotImplementedError(f"Platform {platform} not found")
         return
 
     def _load_developers(self):

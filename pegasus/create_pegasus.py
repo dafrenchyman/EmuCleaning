@@ -16,22 +16,33 @@ from pegasus.pegasus_text_builder import PegasusTextBuilder
 # Using the same system names found here:
 #   https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#game-system-customizations
 ROM_FOLDER_PATHS = {
-    "arcade": "/ROMs/arcade/",
-    "atari2600": "/ROMs/atari2600/",
-    "gb": "/ROMs/gb/",
-    "gba": "/ROMs/gba/",
-    "gbc": "/ROMs/gbc/",
-    "gc": "/ROMs/gc/",
-    "genesis": "/ROMs/genesis/",
-    "nes": "/ROMs/nes/",
-    "ngp": "/ROMs/ngp/",
-    "ngpc": "/ROMs/ngpc/",
-    "ps2": "/ROMs/ps2/",
-    "psx": "/ROMs/psx/",
-    "snes": "/ROMs/snes/",
-    "sega32x": "/ROMs/sega32x/",
-    "wii": "/ROMs/wii/",
-    "xbox": "/ROMs/xbox/",
+    # "amiga": "/ROMs/amiga/",
+    # "arcade": "/ROMs/arcade/",
+    # "atari2600": "/ROMs/atari2600/",
+    # "atari5200": "/ROMs/atari5200/",
+    # "atari7800": "/ROMs/atari7800/",
+    # "atarijaguar": "/ROMs/atarijaguar/",
+    # "atarilynx": "/ROMs/atarilynx/",
+    # "atarist": "/ROMs/atarist/",
+    # "colecovision": "/ROMs/colecovision/",
+    # "gb": "/ROMs/gb/",
+    # "gba": "/ROMs/gba/",
+    # "gbc": "/ROMs/gbc/",
+    # "gc": "/ROMs/gc/",
+    # "genesis": "/ROMs/genesis/",
+    # "n64": "/ROMs/n64/",
+    "neogeo": "/ROMs/neogeo/",
+    # "nes": "/ROMs/nes/",
+    # "ngp": "/ROMs/ngp/",
+    # "ngpc": "/ROMs/ngpc/",
+    # "ps2": "/ROMs/ps2/",
+    # "psx": "/ROMs/psx/",
+    # "snes": "/ROMs/snes/",
+    # "snes_widescreen": "/ROMs/snes_widescreen/",
+    # "sega32x": "/ROMs/sega32x/",
+    # "virtualboy": "/ROMs/virtualboy/",
+    # "wii": "/ROMs/wii/",
+    # "xbox": "/ROMs/xbox/",
 }
 
 # Where to put the steamgriddb & thegamesdb images
@@ -70,7 +81,7 @@ class RomProcessor:
             self.no_intro_db = NoIntroDb(platform=platform)
 
         # Setup the ArcadeDD
-        if platform == "arcade":
+        if platform in ("arcade", "neogeo"):
             self.arcade_db = ArcadeDb()
 
         self.internet_game_db = InternetGameDb(platform)
@@ -107,7 +118,7 @@ class RomProcessor:
                 temp_rom_file = tempfile.mktemp()
                 with zipfile.ZipFile(full_filename_path, "r") as zip_ref:
                     # Can only process if it's one ROM per file
-                    if len(zip_ref.filelist):
+                    if len(zip_ref.filelist) == 1:
                         rom_file_name = zip_ref.extract(
                             member=zip_ref.filelist[0], path=temp_rom_file
                         )
@@ -117,7 +128,7 @@ class RomProcessor:
             game_no_intro = self.no_intro_db.get_game_info_from_filename(rom_file_name)
             game_name_clean = NoIntroDb.get_regular_name_from_no_intro(game_no_intro)
 
-        elif self.platform == "arcade":
+        elif self.platform in ("arcade", "neogeo"):
             game_no_intro = {}
             filename_no_ext = Path(filename).stem
             game_name_clean, game_title = self.arcade_db.convert_filename_to_game_name(

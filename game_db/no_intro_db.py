@@ -5,7 +5,14 @@ import xmltodict as xmltodict
 
 NO_INTRO_ROOT = "/mnt/SnapSsdArray_01/SnapDisk_4TB_27/Consoles/DatFiles/No-Intro Love Pack (Standard) (2023-04-13)"
 PLATFORM_LOOKUP = {
-    # "NES": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo Entertainment System (Headered) (20230413-090934).dat",
+    "amiga": f"{NO_INTRO_ROOT}/No-Intro/Commodore - Amiga (20220712-143036).dat",
+    "atari800": f"{NO_INTRO_ROOT}/No-Intro/Atari - 2600 (20230330-104503).dat",
+    "atari2600": f"{NO_INTRO_ROOT}/No-Intro/Atari - 2600 (20230330-104503).dat",
+    "atari5200": f"{NO_INTRO_ROOT}/No-Intro/Atari - 5200 (20220405-183755).dat",
+    "atari7800": f"{NO_INTRO_ROOT}/No-Intro/Atari - 7800 (20220714-205237).dat",
+    "atarilynx": f"{NO_INTRO_ROOT}/No-Intro/Atari - Lynx (20230322-221226).dat",
+    "atarijaguar": f"{NO_INTRO_ROOT}/No-Intro/Atari - Jaguar (J64) (20230312-215215).dat",
+    "colecovision": f"{NO_INTRO_ROOT}/No-Intro/Coleco - ColecoVision (20230204-141322).dat",
     "gameandwatch": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game & Watch (20211228-000000).dat",
     "gb": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy (20230413-112139).dat",
     "gba": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Game Boy Advance (20230412-152643).dat",
@@ -14,10 +21,14 @@ PLATFORM_LOOKUP = {
     "n64": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo 64 (BigEndian) (20230410-124148).dat",
     "n64dd": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo 64DD (20230131-042611).dat",
     "nes": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo Entertainment System (Headerless) (20230413-090934).dat",
+    # "nes": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Nintendo Entertainment System (Headered) (20230413-090934).dat",
     "ngp": f"{NO_INTRO_ROOT}/No-Intro/SNK - NeoGeo Pocket (20230307-173713).dat",
     "ngpc": f"{NO_INTRO_ROOT}/No-Intro/SNK - NeoGeo Pocket Color (20230408-021339).dat",
     "sega32x": f"{NO_INTRO_ROOT}/No-Intro/Sega - 32X (20230308-124118).dat",
     "snes": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Super Nintendo Entertainment System (20230409-114707).dat",
+    "virtualboy": f"{NO_INTRO_ROOT}/No-Intro/Nintendo - Virtual Boy (20230405-120113).dat",
+    "wonderswan": f"{NO_INTRO_ROOT}/No-Intro/Bandai - WonderSwan (20230317-075216).dat",
+    "wonderswancolor": f"{NO_INTRO_ROOT}/No-Intro/Bandai - WonderSwan Color (20230218-062956).dat",
 }
 REG_EX_COUNTRIES = (
     r"( \(("
@@ -131,11 +142,11 @@ class NoIntroDb:
         for game in dat["datafile"]["game"]:
             if isinstance(game["rom"], list):
                 for curr_file in game["rom"]:
-                    if curr_file["@md5"].upper() == hash.upper():
+                    if curr_file.get("@md5", "").upper() == hash.upper():
                         return curr_file
             elif isinstance(game["rom"], dict):
                 curr_file = game["rom"]
-                if curr_file["@md5"].upper() == hash.upper():
+                if curr_file.get("@md5", "").upper() == hash.upper():
                     return game
         return
 
