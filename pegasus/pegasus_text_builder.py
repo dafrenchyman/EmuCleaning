@@ -33,10 +33,22 @@ TYPE_EXPRESSION = (
 ALLOWED_TYPES = ["ARCADE", "REV", "UNL"]  # , "BETA", "PROTO"
 
 START_OF_TEXT = {
+    "3do": """
+collection: Panasonic 3DO
+shortname: 3do
+command: /bin/rom_launcher.sh 3do "{file.path}"
+
+""",
     "amiga": """
 collection: Commodore Amiga
 shortname: amiga
 command: /bin/rom_launcher.sh amiga "{file.path}"
+
+""",
+    "amigacd32": """
+collection: Commodore Amiga CD 32
+shortname: amigacd32
+command: /bin/rom_launcher.sh amigacd32 "{file.path}"
 
 """,
     "arcade": """
@@ -69,6 +81,12 @@ shortname: atarijaguar
 command: /bin/rom_launcher.sh atarijaguar "{file.path}"
 
 """,
+    "atarijaguarcd": """
+collection: Atari Jaguar CD
+shortname: atarijaguarcd
+command: /bin/rom_launcher.sh atarijaguarcd "{file.path}"
+
+""",
     "atarilynx": """
 collection: Atari Lynx
 shortname: atarilynx
@@ -85,6 +103,12 @@ command: /bin/rom_launcher.sh atarist "{file.path}"
 collection: Coleco ColecoVision
 shortname: colecovision
 command: /bin/rom_launcher.sh colecovision "{file.path}"
+
+""",
+    "dreamcast": """
+collection: Sega Dreamcast
+shortname: dreamcast
+command: /bin/rom_launcher.sh dreamcast "{file.path}"
 
 """,
     "genesis": """
@@ -117,6 +141,12 @@ shortname: gc
 command: /bin/rom_launcher.sh gc "{file.path}"
 
 """,
+    "megacd": """
+collection: Sega Mega CD
+shortname: megacd
+command: /bin/rom_launcher.sh megacd "{file.path}"
+
+""",
     "n64": """
 collection: Nintendo 64
 shortname: n64
@@ -147,10 +177,34 @@ shortname: ngpc
 command: /bin/rom_launcher.sh ngpc "{file.path}"
 
 """,
+    "pcengine": """
+collection: NEC PC Engine
+shortname: pcengine
+command: /bin/rom_launcher.sh pcengine "{file.path}"
+
+""",
+    "pcenginecd": """
+collection: NEC PC Engine CD
+shortname: pcenginecd
+command: /bin/rom_launcher.sh pcenginecd "{file.path}"
+
+""",
     "ps2": """
 collection: Sony Playstation 2
 shortname: ps2
 command: /bin/rom_launcher.sh ps2 "{file.path}"
+
+""",
+    "ps3": """
+collection: Sony Playstation 3
+shortname: ps3
+command: /bin/rom_launcher.sh ps3 "{file.path}"
+
+""",
+    "psp": """
+collection: Sony Playstation Portable
+shortname: psp
+command: /bin/rom_launcher.sh psp "{file.path}"
 
 """,
     "psx": """
@@ -159,10 +213,22 @@ shortname: psx
 command: /bin/rom_launcher.sh psx "{file.path}"
 
 """,
+    "saturn": """
+collection: Sega Saturn
+shortname: saturn
+command: /bin/rom_launcher.sh saturn "{file.path}"
+
+""",
     "sega32x": """
 collection: Sega 32X
 shortname: sega32x
 command: /bin/rom_launcher.sh sega32x "{file.path}"
+
+""",
+    "segacd": """
+collection: Sega CD
+shortname: segacd
+command: /bin/rom_launcher.sh segacd "{file.path}"
 
 """,
     "snes": """
@@ -177,6 +243,12 @@ shortname: snes_widescreen
 command: /bin/rom_launcher.sh snes_widescreen "{file.path}"
 
 """,
+    "tg-cd": """
+collection: NEC Turbo Grafx CD
+shortname: tg-cd
+command: /bin/rom_launcher.sh tg-cd "{file.path}"
+
+""",
     "virtualboy": """
 collection: Nintendo Virtual Boy
 shortname: virtualboy
@@ -187,6 +259,18 @@ command: /bin/rom_launcher.sh virtualboy "{file.path}"
 collection: Nintendo Wii
 shortname: wii
 command: /bin/rom_launcher.sh gc "{file.path}"
+
+""",
+    "wonderswan": """
+collection: Bandai - WonderSwan
+shortname: wonderswan
+command: /bin/rom_launcher.sh wonderswan "{file.path}"
+
+""",
+    "wonderswancolor": """
+collection: Bandai - WonderSwan Color
+shortname: wonderswancolor
+command: /bin/rom_launcher.sh wonderswancolor "{file.path}"
 
 """,
     "xbox": """
@@ -202,6 +286,7 @@ class PegasusTextBuilder:
     def __init__(self, the_games_db: TheGamesDbBase, platform: str) -> None:
         self.the_games_db = the_games_db
         self.text = START_OF_TEXT[platform]
+        self.platform = platform
         return
 
     def get_image_filename(self, game_db, image_type):
@@ -306,6 +391,10 @@ class PegasusTextBuilder:
             # rom_type_version = expression.group(4)
             # complete_rom_type = expression.group(1)
             # game_title_extras = complete_rom_type
+
+        # PS3 needs to link to the <game_folder>/PS3_GAME/USRDIR/EBOOT.BIN
+        if self.platform == "ps3":
+            filename = f"{filename}/PS3_GAME/USRDIR/EBOOT.BIN"
 
         # The complete text
         self.text += f"""\n

@@ -17,11 +17,13 @@ PLATFORM_TO_WHERE_CAUSE = {
     # "Unknown": 'search "platform_name";'
     "3do": 'where name = ("3DO Interactive Multiplayer");',
     "amiga": 'where name = ("Amiga");',
+    "amigacd32": 'where name = ("Amiga CD32");',
     "arcade": 'where name = ("Arcade");',
     "atari2600": 'where name = ("Atari 2600");',
     "atari5200": 'where name = ("Atari 5200");',
     "atari7800": 'where name = ("Atari 7800");',
     "atarijaguar": 'where name = ("Atari Jaguar");',
+    "atarijaguarcd": 'where name = ("Atari Jaguar CD");',
     "atarilynx": 'where name = ("Atari Lynx");',
     "atarist": 'where name = ("Atari ST/STE");',
     "cdtv": 'where name = ("Commodore CDTV");',
@@ -36,6 +38,7 @@ PLATFORM_TO_WHERE_CAUSE = {
     "genesis": 'where name = ("Sega Mega Drive/Genesis");',
     "ios": 'where name = ("iOS");',
     "mastersystem": 'where name = ("Sega Master System/Mark III");',
+    "megacd": 'where name = ("Sega CD");',
     "n3ds": 'where name = ("Nintendo 3DS");',
     "n64": 'where name = ("Nintendo 64");',
     "n64dd": 'where name = ("Nintendo 64DD");',
@@ -46,6 +49,7 @@ PLATFORM_TO_WHERE_CAUSE = {
     "ngpc": 'where name = ("Neo Geo Pocket Color");',
     "odyssey": 'where name = ("Odyssey");',
     "plus4": 'where name = ("Commodore Plus/4");',
+    "pcenginecd": 'where name = ("Turbografx-16/PC Engine CD");',
     "ps2": 'where name = ("PlayStation 2");',
     "ps3": 'where name = ("PlayStation 3");',
     "ps4": 'where name = ("PlayStation 4", "PlayStation VR");',
@@ -60,9 +64,12 @@ PLATFORM_TO_WHERE_CAUSE = {
     "snes": 'where name = ("Super Nintendo Entertainment System", "Super Famicom");',
     "snes_widescreen": 'where name = ("Super Nintendo Entertainment System", "Super Famicom");',
     "switch": 'where name = ("Nintendo Switch");',
+    "tg-cd": 'where name = ("Turbografx-16/PC Engine CD");',
     "virtualboy": 'where name = ("Virtual Boy");',
     "wii": 'where name = ("Wii");',
     "wiiu": 'where name = ("WiiU");',
+    "wonderswan": 'where name = ("WonderSwan");',
+    "wonderswancolor": 'where name = ("WonderSwan Color");',
     "xbox": 'where name = ("Xbox");',
     "xbox360": 'where name = ("Xbox 360");',
     "xboxone": 'where name = ("Xbox One");',
@@ -154,8 +161,12 @@ class InternetGameDb:
         if df.shape[0] > 0:
             results = json.loads(df["result"][0])
         else:
-            # We can only do 4 requests per second. Wait to make sure we haven't reached the limit
             now = datetime.datetime.now()
+            # If the token has expired, get a new one
+            if self.expired_time < now:
+                self.igdb = self.get_wrapper()
+
+            # We can only do 4 requests per second. Wait to make sure we haven't reached the limit
             if self.last_request + datetime.timedelta(seconds=0.25) > now:
                 duration = now - self.last_request + datetime.timedelta(seconds=0.25)
                 time.sleep(duration.total_seconds())

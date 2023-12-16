@@ -16,37 +16,81 @@ from pegasus.pegasus_text_builder import PegasusTextBuilder
 # Using the same system names found here:
 #   https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#game-system-customizations
 ROM_FOLDER_PATHS = {
+    # "3do": "/ROMs/3do/",
     # "amiga": "/ROMs/amiga/",
+    # "amigacd32": "/ROMs/amigacd32/",
     # "arcade": "/ROMs/arcade/",
     # "atari2600": "/ROMs/atari2600/",
     # "atari5200": "/ROMs/atari5200/",
     # "atari7800": "/ROMs/atari7800/",
     # "atarijaguar": "/ROMs/atarijaguar/",
+    # "atarijaguarcd": "/ROMs/atarijaguarcd/",
     # "atarilynx": "/ROMs/atarilynx/",
     # "atarist": "/ROMs/atarist/",
     # "colecovision": "/ROMs/colecovision/",
+    # "dreamcast": "/ROMs/dreamcast/",
     # "gb": "/ROMs/gb/",
     # "gba": "/ROMs/gba/",
     # "gbc": "/ROMs/gbc/",
     # "gc": "/ROMs/gc/",
     # "genesis": "/ROMs/genesis/",
     # "n64": "/ROMs/n64/",
-    "neogeo": "/ROMs/neogeo/",
+    # "neogeo": "/ROMs/neogeo/",
     # "nes": "/ROMs/nes/",
     # "ngp": "/ROMs/ngp/",
     # "ngpc": "/ROMs/ngpc/",
+    # "megacd": "/ROMs/megacd/",
+    # "pcenginecd": "/ROMs/pcenginecd/",
     # "ps2": "/ROMs/ps2/",
+    # "psp": "/ROMs/psp/",
+    "ps3": "/ROMs/ps3/",
     # "psx": "/ROMs/psx/",
+    # "saturn": "/ROMs/saturn/",
+    # "sega32x": "/ROMs/sega32x/",
+    # "segacd": "/ROMs/segacd/",
     # "snes": "/ROMs/snes/",
     # "snes_widescreen": "/ROMs/snes_widescreen/",
-    # "sega32x": "/ROMs/sega32x/",
+    # "tg-16": "/ROMs/tg-16/",
+    # "tg-cd": "/ROMs/tg-cd/",
     # "virtualboy": "/ROMs/virtualboy/",
     # "wii": "/ROMs/wii/",
+    # "wonderswan": "/ROMs/wonderswan/",
+    # "wonderswancolor": "/ROMs/wonderswancolor/",
     # "xbox": "/ROMs/xbox/",
 }
 
 # Where to put the steamgriddb & thegamesdb images
 ARTWORK_FOLDER_PATH = "/ROMs/.assets/"
+VALID_EXTENSIONS = [
+    "32x",  # Sega - 32X
+    "a26",  # Atari - 2600
+    "a52",  # Atari - 5200
+    "a78",  # Atari - 7800
+    "bin",  #
+    "chd",  # Compressed Hard Disk
+    "cl",  # Coleco - ColecoVision
+    "cso",  # Compressed ISO
+    "cue",  # bin/cue CD image
+    "gb",  # Nintendo - Game Boy
+    "gba",  # Nintendo - Game Boy Advanced
+    "gbc",  # Nintendo - Game Boy Color
+    "ipf",  # Atari - ST / Commodare - Amigi
+    "iso",  # iso CD image
+    "j64",  # Atari - Jaguar
+    "lnx",  # Atari - Lynx
+    "m3u",
+    "md",  # Sega - Genesis
+    "nes",  # Nintendo - Nintendo Entertainment System
+    "ngp",  # Neo Geo Pocket / Neo Geo Pocket Color
+    "rvz",  # Nintendo - Wii
+    "smc",  # Nintendo - Super Nintendo
+    "sfc",  # Nintendo - Super Nintendo
+    "vb",  # Nintendo - Virtual Boy
+    "ws",  # Bandai - WonderSwan
+    "wsc",  # Bandai - WonderSwan Color
+    "z64",
+    "zip",
+]
 
 
 def md5sum(filename, offset):
@@ -80,7 +124,7 @@ class RomProcessor:
         if NoIntroDb.platform_available(self.platform):
             self.no_intro_db = NoIntroDb(platform=platform)
 
-        # Setup the ArcadeDD
+        # Setup the ArcadeDB
         if platform in ("arcade", "neogeo"):
             self.arcade_db = ArcadeDb()
 
@@ -101,16 +145,26 @@ class RomProcessor:
         for _, filename in enumerate(all_files):
             full_filename_path = os.path.join(self.rom_folder_path, filename)
 
-            if os.path.isdir(full_filename_path):
+            if os.path.isdir(full_filename_path) and self.platform not in ["ps3"]:
+                continue
+
+            if not os.path.isdir(full_filename_path) and self.platform in ["ps3"]:
                 continue
 
             self.process_rom(full_filename_path, filename)
 
         return
 
-    def process_rom(self, full_filename_path, filename):
+    def process_rom(self, full_filename_path: str, filename: str) -> None:
         game_name_clean = None
         game_title = None
+
+        # ps3 games are folders
+        if self.platform not in ["ps3"]:
+            # If the file doesn't have a valid extension skip it
+            if Path(filename).suffix.replace(".", "") not in VALID_EXTENSIONS:
+                return
+
         if NoIntroDb.platform_available(self.platform):
             rom_file_name = full_filename_path
             # Check if it's a zip file
@@ -216,11 +270,18 @@ class RomProcessor:
 
 def main():
     for platform in ROM_FOLDER_PATHS.keys():
-        rom_processor = RomProcessor(
-            platform=platform, rom_folder=ROM_FOLDER_PATHS[platform]
-        )
-        rom_processor.process_roms()
-        rom_processor.write_pegasus_file()
+        print(80 * "-")
+        print(f"Processing: {platform}")
+        print(80 * "-")
+        rom_folder = ROM_FOLDER_PATHS[platform]
+
+        if os.path.exists(rom_folder):
+            rom_processor = RomProcessor(
+                platform=platform,
+                rom_folder=rom_folder,
+            )
+            rom_processor.process_roms()
+            rom_processor.write_pegasus_file()
 
     return
 
