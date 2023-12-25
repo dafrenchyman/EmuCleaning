@@ -122,6 +122,11 @@ REG_EX_COUNTRIES = (
 REG_EX_LANG = r"\(((En-(US|GB)\,)+)?(\,)?(([A-Z][a-z]|[A-Z][a-z]\+[A-Z][a-z])(\,)?)+\)"
 REG_EX_DATE = r" \([0-9]{4}-[0-9]{1,2}-[0-9]{1,2}\)"
 REG_EX_EXTRAS = r"\[(SC|SL)(US)-[0-9]+ \([0-9].[0-9]+\)\]"
+REG_EX_PS3 = r"\(B(CES|CUS|LJM|LES|LUS)[0-9]+\)"
+REG_EX_SWITCH_GAME_ID = r"\[([0-9A-Z]){16}\]"
+REG_EX_SWITCH_GAME_VER = r"(\[v\d\])|(\[v\d.\d.\d\])"
+REG_EX_SWITCH_GAME_SIZE = r"\(\d+.\d+ GB\)"
+REG_EX_SWITCH_REGION = r"\[US\]"
 
 
 class NoIntroDb:
@@ -181,7 +186,18 @@ class NoIntroDb:
         game_name = None
         if no_intro_game is not None:
             game_name = no_intro_game["@name"]
-            all_reg_ex = [REG_EX_COUNTRIES, REG_EX_LANG, REG_EX_DATE, REG_EX_EXTRAS]
+            all_reg_ex = [
+                REG_EX_COUNTRIES,
+                REG_EX_LANG,
+                REG_EX_DATE,
+                REG_EX_EXTRAS,
+                REG_EX_PS3,
+                REG_EX_SWITCH_GAME_ID,
+                REG_EX_SWITCH_GAME_VER,
+                REG_EX_SWITCH_GAME_SIZE,
+                REG_EX_SWITCH_REGION,
+            ]
+
             for replacement in all_reg_ex:
                 game_name = re.sub(replacement, "", game_name)
             if ", The" in game_name:

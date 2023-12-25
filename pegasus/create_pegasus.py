@@ -43,13 +43,14 @@ ROM_FOLDER_PATHS = {
     # "pcenginecd": "/ROMs/pcenginecd/",
     # "ps2": "/ROMs/ps2/",
     # "psp": "/ROMs/psp/",
-    "ps3": "/ROMs/ps3/",
+    # "ps3": "/ROMs/ps3/",
     # "psx": "/ROMs/psx/",
     # "saturn": "/ROMs/saturn/",
     # "sega32x": "/ROMs/sega32x/",
     # "segacd": "/ROMs/segacd/",
     # "snes": "/ROMs/snes/",
     # "snes_widescreen": "/ROMs/snes_widescreen/",
+    "switch": "/ROMs/switch/",
     # "tg-16": "/ROMs/tg-16/",
     # "tg-cd": "/ROMs/tg-cd/",
     # "virtualboy": "/ROMs/virtualboy/",
@@ -82,12 +83,14 @@ VALID_EXTENSIONS = [
     "md",  # Sega - Genesis
     "nes",  # Nintendo - Nintendo Entertainment System
     "ngp",  # Neo Geo Pocket / Neo Geo Pocket Color
+    "nsp",  # Nintendo - Switch
     "rvz",  # Nintendo - Wii
     "smc",  # Nintendo - Super Nintendo
     "sfc",  # Nintendo - Super Nintendo
     "vb",  # Nintendo - Virtual Boy
     "ws",  # Bandai - WonderSwan
     "wsc",  # Bandai - WonderSwan Color
+    "xci",  # Nintendo - Switch
     "z64",
     "zip",
 ]
@@ -145,10 +148,22 @@ class RomProcessor:
         for _, filename in enumerate(all_files):
             full_filename_path = os.path.join(self.rom_folder_path, filename)
 
+            # Don't look at folders and unless it's for an emulator
+            # that looks at an extracted game (ie: PS3)
             if os.path.isdir(full_filename_path) and self.platform not in ["ps3"]:
                 continue
 
+            # If it's for an emulator that requires a folder structure
+            # and it's a file, skip it
             if not os.path.isdir(full_filename_path) and self.platform in ["ps3"]:
+                continue
+
+            # Ignore the ".assets" folder, as that just contains images
+            if os.path.isdir(full_filename_path) and filename == ".assets":
+                continue
+
+            # Ignore the pegasus metadata file
+            if filename == "metadata.pegasus.txt":
                 continue
 
             self.process_rom(full_filename_path, filename)
@@ -258,6 +273,7 @@ class RomProcessor:
                 no_intro=game_no_intro,
                 images=all_assets,
                 game_title=game_title,
+                full_filename_path=full_filename_path,
             )
         else:
             print("\tUnable to find game ")

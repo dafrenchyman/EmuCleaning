@@ -243,6 +243,12 @@ shortname: snes_widescreen
 command: /bin/rom_launcher.sh snes_widescreen "{file.path}"
 
 """,
+    "switch": """
+collection: Nintendo - Switch
+shortname: switch
+command: /bin/rom_launcher.sh switch "{file.path}"
+
+""",
     "tg-cd": """
 collection: NEC Turbo Grafx CD
 shortname: tg-cd
@@ -334,6 +340,7 @@ class PegasusTextBuilder:
         no_intro,
         images,
         game_title=None,
+        full_filename_path=None,
     ):
         # region
         release = no_intro.get("release", None)
@@ -394,7 +401,14 @@ class PegasusTextBuilder:
 
         # PS3 needs to link to the <game_folder>/PS3_GAME/USRDIR/EBOOT.BIN
         if self.platform == "ps3":
-            filename = f"{filename}/PS3_GAME/USRDIR/EBOOT.BIN"
+            ps3_eboot_file = "PS3_GAME/USRDIR/EBOOT.BIN"
+            filename = f"{filename}/{ps3_eboot_file}"
+
+            # If the file doesn't exist, don't write an entry
+            full_eboot_path = f"{full_filename_path}/{ps3_eboot_file}"
+            if not os.path.isfile(full_eboot_path):
+                print(f"Skipping, file doesn't exists: {full_eboot_path}")
+                return
 
         # The complete text
         self.text += f"""\n
