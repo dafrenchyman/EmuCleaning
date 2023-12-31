@@ -267,6 +267,12 @@ shortname: wii
 command: /bin/rom_launcher.sh gc "{file.path}"
 
 """,
+    "wiiu": """
+collection: Nintendo WiiU
+shortname: wiiu
+command: /bin/rom_launcher.sh wiiu "{file.path}"
+
+""",
     "wonderswan": """
 collection: Bandai - WonderSwan
 shortname: wonderswan

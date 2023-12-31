@@ -126,7 +126,7 @@ REG_EX_PS3 = r"\(B(CES|CUS|LJM|LES|LUS)[0-9]+\)"
 REG_EX_SWITCH_GAME_ID = r"\[([0-9A-Z]){16}\]"
 REG_EX_SWITCH_GAME_VER = r"(\[v\d\])|(\[v\d.\d.\d\])"
 REG_EX_SWITCH_GAME_SIZE = r"\(\d+.\d+ GB\)"
-REG_EX_SWITCH_REGION = r"\[US\]"
+REG_EX_SWITCH_REGION = r"(\[US\])|(\[JP\])|(\[EU\])"
 
 
 class NoIntroDb:

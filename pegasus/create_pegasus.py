@@ -50,11 +50,12 @@ ROM_FOLDER_PATHS = {
     # "segacd": "/ROMs/segacd/",
     # "snes": "/ROMs/snes/",
     # "snes_widescreen": "/ROMs/snes_widescreen/",
-    "switch": "/ROMs/switch/",
+    # "switch": "/ROMs/switch/",
     # "tg-16": "/ROMs/tg-16/",
     # "tg-cd": "/ROMs/tg-cd/",
     # "virtualboy": "/ROMs/virtualboy/",
     # "wii": "/ROMs/wii/",
+    "wiiu": "/ROMs/wiiu/",
     # "wonderswan": "/ROMs/wonderswan/",
     # "wonderswancolor": "/ROMs/wonderswancolor/",
     # "xbox": "/ROMs/xbox/",
@@ -150,12 +151,18 @@ class RomProcessor:
 
             # Don't look at folders and unless it's for an emulator
             # that looks at an extracted game (ie: PS3)
-            if os.path.isdir(full_filename_path) and self.platform not in ["ps3"]:
+            if os.path.isdir(full_filename_path) and self.platform not in [
+                "ps3",
+                "wiiu",
+            ]:
                 continue
 
             # If it's for an emulator that requires a folder structure
             # and it's a file, skip it
-            if not os.path.isdir(full_filename_path) and self.platform in ["ps3"]:
+            if not os.path.isdir(full_filename_path) and self.platform in [
+                "ps3",
+                "wiiu",
+            ]:
                 continue
 
             # Ignore the ".assets" folder, as that just contains images
@@ -174,8 +181,8 @@ class RomProcessor:
         game_name_clean = None
         game_title = None
 
-        # ps3 games are folders
-        if self.platform not in ["ps3"]:
+        # ps3, wiiu games are folders
+        if self.platform not in ["ps3", "wiiu"]:
             # If the file doesn't have a valid extension skip it
             if Path(filename).suffix.replace(".", "") not in VALID_EXTENSIONS:
                 return
