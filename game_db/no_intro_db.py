@@ -127,6 +127,7 @@ REG_EX_SWITCH_GAME_ID = r"\[([0-9A-Z]){16}\]"
 REG_EX_SWITCH_GAME_VER = r"(\[v\d\])|(\[v\d.\d.\d\])"
 REG_EX_SWITCH_GAME_SIZE = r"\(\d+.\d+ GB\)"
 REG_EX_SWITCH_REGION = r"(\[US\])|(\[JP\])|(\[EU\])"
+REG_EX_WII_U_ID = r"\[([0-9A-Z]){8}\]"
 
 
 class NoIntroDb:
@@ -196,6 +197,7 @@ class NoIntroDb:
                 REG_EX_SWITCH_GAME_VER,
                 REG_EX_SWITCH_GAME_SIZE,
                 REG_EX_SWITCH_REGION,
+                REG_EX_WII_U_ID,
             ]
 
             for replacement in all_reg_ex:

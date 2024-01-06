@@ -35,11 +35,13 @@ ROM_FOLDER_PATHS = {
     # "gc": "/ROMs/gc/",
     # "genesis": "/ROMs/genesis/",
     # "n64": "/ROMs/n64/",
+    # "megacd": "/ROMs/megacd/",
+    "model2": "/ROMs/model2/",
+    # "naomi": "/ROMs/naomi/",
     # "neogeo": "/ROMs/neogeo/",
     # "nes": "/ROMs/nes/",
     # "ngp": "/ROMs/ngp/",
     # "ngpc": "/ROMs/ngpc/",
-    # "megacd": "/ROMs/megacd/",
     # "pcenginecd": "/ROMs/pcenginecd/",
     # "ps2": "/ROMs/ps2/",
     # "psp": "/ROMs/psp/",
@@ -50,16 +52,19 @@ ROM_FOLDER_PATHS = {
     # "segacd": "/ROMs/segacd/",
     # "snes": "/ROMs/snes/",
     # "snes_widescreen": "/ROMs/snes_widescreen/",
-    # "switch": "/ROMs/switch/",
+    "switch": "/ROMs/switch/",
     # "tg-16": "/ROMs/tg-16/",
     # "tg-cd": "/ROMs/tg-cd/",
     # "virtualboy": "/ROMs/virtualboy/",
     # "wii": "/ROMs/wii/",
-    "wiiu": "/ROMs/wiiu/",
+    # "wiiu": "/ROMs/wiiu/",
     # "wonderswan": "/ROMs/wonderswan/",
     # "wonderswancolor": "/ROMs/wonderswancolor/",
     # "xbox": "/ROMs/xbox/",
 }
+
+USES_ARCADE_DB = ["arcade", "model2", "naomi", "neogeo"]
+USES_FOLDERS = ["ps3", "wiiu"]
 
 # Where to put the steamgriddb & thegamesdb images
 ARTWORK_FOLDER_PATH = "/ROMs/.assets/"
@@ -129,7 +134,7 @@ class RomProcessor:
             self.no_intro_db = NoIntroDb(platform=platform)
 
         # Setup the ArcadeDB
-        if platform in ("arcade", "neogeo"):
+        if platform in (USES_ARCADE_DB):
             self.arcade_db = ArcadeDb()
 
         self.internet_game_db = InternetGameDb(platform)
@@ -151,18 +156,12 @@ class RomProcessor:
 
             # Don't look at folders and unless it's for an emulator
             # that looks at an extracted game (ie: PS3)
-            if os.path.isdir(full_filename_path) and self.platform not in [
-                "ps3",
-                "wiiu",
-            ]:
+            if os.path.isdir(full_filename_path) and self.platform not in USES_FOLDERS:
                 continue
 
             # If it's for an emulator that requires a folder structure
             # and it's a file, skip it
-            if not os.path.isdir(full_filename_path) and self.platform in [
-                "ps3",
-                "wiiu",
-            ]:
+            if not os.path.isdir(full_filename_path) and self.platform in USES_FOLDERS:
                 continue
 
             # Ignore the ".assets" folder, as that just contains images
@@ -181,8 +180,8 @@ class RomProcessor:
         game_name_clean = None
         game_title = None
 
-        # ps3, wiiu games are folders
-        if self.platform not in ["ps3", "wiiu"]:
+        # Some game emulators use folders instead of files
+        if self.platform not in USES_FOLDERS:
             # If the file doesn't have a valid extension skip it
             if Path(filename).suffix.replace(".", "") not in VALID_EXTENSIONS:
                 return
@@ -204,7 +203,7 @@ class RomProcessor:
             game_no_intro = self.no_intro_db.get_game_info_from_filename(rom_file_name)
             game_name_clean = NoIntroDb.get_regular_name_from_no_intro(game_no_intro)
 
-        elif self.platform in ("arcade", "neogeo"):
+        elif self.platform in USES_ARCADE_DB:
             game_no_intro = {}
             filename_no_ext = Path(filename).stem
             game_name_clean, game_title = self.arcade_db.convert_filename_to_game_name(

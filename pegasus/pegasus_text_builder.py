@@ -147,10 +147,22 @@ shortname: megacd
 command: /bin/rom_launcher.sh megacd "{file.path}"
 
 """,
+    "model2": """
+collection: Sega Model 2
+shortname: model2
+command: /bin/rom_launcher.sh model2 "{file.path}"
+
+""",
     "n64": """
 collection: Nintendo 64
 shortname: n64
 command: /bin/rom_launcher.sh n64 "{file.path}"
+
+""",
+    "naomi": """
+collection: Sega Naomi
+shortname: naomi
+command: /bin/rom_launcher.sh naomi "{file.path}"
 
 """,
     "neogeo": """
