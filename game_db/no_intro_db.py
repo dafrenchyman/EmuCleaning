@@ -87,12 +87,15 @@ REG_EX_COUNTRIES = (
     r"China|"
     r"Canada|"
     r"Europe|"
+    r"Europe, Asia|"
+    r"Europe, Australia|"
     r"France|"
     r"Germany|"
     r"Hong Kong|"
     r"Italy|"
     r"Ja|"
     r"Japan|"
+    r"Japan, Asia|"
     r"Japan, Europe|"
     r"Japan, Europe, Korea|"
     r"Japan, Korea|"
@@ -100,12 +103,17 @@ REG_EX_COUNTRIES = (
     r"Korea|"
     r"Mexico|"
     r"Netherlands|"
+    r"Poland|"
+    r"Russia|"
     r"Spain|"
     r"Sweden|"
     r"Taiwan|"
+    r"UK|"
     r"United Kingdom|"
     r"USA|"
+    r"USA, Asia|"
     r"USA, Australia|"
+    r"USA, Brazil|"
     r"USA, Europe|"
     r"USA, Europe, Korea|"
     r"USA, Korea|"
@@ -122,12 +130,15 @@ REG_EX_COUNTRIES = (
 REG_EX_LANG = r"\(((En-(US|GB)\,)+)?(\,)?(([A-Z][a-z]|[A-Z][a-z]\+[A-Z][a-z])(\,)?)+\)"
 REG_EX_DATE = r" \([0-9]{4}-[0-9]{1,2}-[0-9]{1,2}\)"
 REG_EX_EXTRAS = r"\[(SC|SL)(US)-[0-9]+ \([0-9].[0-9]+\)\]"
-REG_EX_PS3 = r"\(B(CES|CUS|LJM|LES|LUS)[0-9]+\)"
+REG_EX_PS3 = (
+    r"\(B(CAS|CES|CET|CKS|CJB|CJS|CUS|LAS|LKS|LJM|LJS|LES|LUS|LUD)([-])?[0-9]+\)"
+)
 REG_EX_SWITCH_GAME_ID = r"\[([0-9A-Z]){16}\]"
 REG_EX_SWITCH_GAME_VER = r"(\[v\d\])|(\[v\d.\d.\d\])"
 REG_EX_SWITCH_GAME_SIZE = r"\(\d+.\d+ GB\)"
 REG_EX_SWITCH_REGION = r"(\[US\])|(\[JP\])|(\[EU\])"
 REG_EX_WII_U_ID = r"\[([0-9A-Z]){8}\]"
+REG_EX_VERSION = r"(\([vV][0-9]+.[0-9]+\))"
 
 
 class NoIntroDb:
@@ -198,6 +209,7 @@ class NoIntroDb:
                 REG_EX_SWITCH_GAME_SIZE,
                 REG_EX_SWITCH_REGION,
                 REG_EX_WII_U_ID,
+                REG_EX_VERSION,
             ]
 
             for replacement in all_reg_ex:

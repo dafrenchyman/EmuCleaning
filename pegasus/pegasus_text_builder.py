@@ -153,6 +153,12 @@ shortname: model2
 command: /bin/rom_launcher.sh model2 "{file.path}"
 
 """,
+    "model3": """
+collection: Sega Model 3
+shortname: model3
+command: /bin/rom_launcher.sh model3 "{file.path}"
+
+""",
     "n64": """
 collection: Nintendo 64
 shortname: n64
@@ -229,6 +235,12 @@ command: /bin/rom_launcher.sh psx "{file.path}"
 collection: Sega Saturn
 shortname: saturn
 command: /bin/rom_launcher.sh saturn "{file.path}"
+
+""",
+    "scummvm": """
+collection: Scumm VM
+shortname: scummvm
+command: /bin/rom_launcher.sh scummvm "{file.path}"
 
 """,
     "sega32x": """
@@ -418,7 +430,7 @@ class PegasusTextBuilder:
             # game_title_extras = complete_rom_type
 
         # PS3 needs to link to the <game_folder>/PS3_GAME/USRDIR/EBOOT.BIN
-        if self.platform == "ps3":
+        if self.platform == "ps3" and False:
             ps3_eboot_file = "PS3_GAME/USRDIR/EBOOT.BIN"
             filename = f"{filename}/{ps3_eboot_file}"
 
@@ -433,7 +445,7 @@ class PegasusTextBuilder:
 game: {game_title}
 sort-by: {game_title}
 file: {filename}
-description: {description}
+description: {filename} {description}
 release: {game_db.get('release_date', '')}
 region: {region}
 developer: {developers}

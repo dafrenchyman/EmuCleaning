@@ -4,6 +4,7 @@ This code is currently a mess. It needs a lot of cleanup.
 
 ## Setup for developement:
 
+- Setup Sqlite `sudo apt install sqlite3 libsqlite3-dev`
 - Setup a python 3.x venv (usually in `.venv`)
 - `pip3 install --upgrade pip`
 - Install pip-tools `pip3 install pip-tools`

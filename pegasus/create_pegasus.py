@@ -8,6 +8,7 @@ from pathlib import Path
 from game_db.arcade_db import ArcadeDb
 from game_db.internet_game_db import InternetGameDb
 from game_db.no_intro_db import NoIntroDb
+from game_db.scummvm_db import ScummVmDB
 from game_db.steam_grid_db import SteamGridDb
 from game_db.the_games_db_sqlite import TheGamesDbSqlite
 from pegasus.local_files import LocalFiles
@@ -36,7 +37,8 @@ ROM_FOLDER_PATHS = {
     # "genesis": "/ROMs/genesis/",
     # "n64": "/ROMs/n64/",
     # "megacd": "/ROMs/megacd/",
-    "model2": "/ROMs/model2/",
+    # "model2": "/ROMs/model2/",
+    # "model3": "/ROMs/model3/",
     # "naomi": "/ROMs/naomi/",
     # "neogeo": "/ROMs/neogeo/",
     # "nes": "/ROMs/nes/",
@@ -45,14 +47,15 @@ ROM_FOLDER_PATHS = {
     # "pcenginecd": "/ROMs/pcenginecd/",
     # "ps2": "/ROMs/ps2/",
     # "psp": "/ROMs/psp/",
-    # "ps3": "/ROMs/ps3/",
+    "ps3": "/ROMs/ps3/",
     # "psx": "/ROMs/psx/",
     # "saturn": "/ROMs/saturn/",
     # "sega32x": "/ROMs/sega32x/",
     # "segacd": "/ROMs/segacd/",
+    # "scummvm": "/ROMs/scummvm/",
     # "snes": "/ROMs/snes/",
     # "snes_widescreen": "/ROMs/snes_widescreen/",
-    "switch": "/ROMs/switch/",
+    # "switch": "/ROMs/switch/",
     # "tg-16": "/ROMs/tg-16/",
     # "tg-cd": "/ROMs/tg-cd/",
     # "virtualboy": "/ROMs/virtualboy/",
@@ -63,8 +66,10 @@ ROM_FOLDER_PATHS = {
     # "xbox": "/ROMs/xbox/",
 }
 
-USES_ARCADE_DB = ["arcade", "model2", "naomi", "neogeo"]
-USES_FOLDERS = ["ps3", "wiiu"]
+USES_ARCADE_DB = ["arcade", "model2", "model3", "naomi", "neogeo"]
+USES_SCHUMMVM = ["scummvm"]
+# USES_FOLDERS = ["ps3", "wiiu"]
+USES_FOLDERS = ["wiiu"]
 
 # Where to put the steamgriddb & thegamesdb images
 ARTWORK_FOLDER_PATH = "/ROMs/.assets/"
@@ -90,6 +95,7 @@ VALID_EXTENSIONS = [
     "nes",  # Nintendo - Nintendo Entertainment System
     "ngp",  # Neo Geo Pocket / Neo Geo Pocket Color
     "nsp",  # Nintendo - Switch
+    "nsz",  # Nintendo - Switch
     "rvz",  # Nintendo - Wii
     "smc",  # Nintendo - Super Nintendo
     "sfc",  # Nintendo - Super Nintendo
@@ -128,6 +134,10 @@ class RomProcessor:
     def __init__(self, platform: str, rom_folder: str) -> None:
         self.platform = platform
         self.rom_folder_path = rom_folder
+
+        # Setup SCUMM VM
+        if platform == "scummvm":
+            self.scumm_vm = ScummVmDB()
 
         # Setup the NoIntroDB
         if NoIntroDb.platform_available(self.platform):
@@ -203,6 +213,16 @@ class RomProcessor:
             game_no_intro = self.no_intro_db.get_game_info_from_filename(rom_file_name)
             game_name_clean = NoIntroDb.get_regular_name_from_no_intro(game_no_intro)
 
+        elif self.platform in USES_SCHUMMVM:
+            game_no_intro = {}
+            filename_no_ext = Path(filename).stem
+            scumm_vm_info = self.scumm_vm.get_scummvm_from_game_name(filename_no_ext)
+            if scumm_vm_info is not None:
+                game_name_clean = scumm_vm_info.get("name")
+                game_title = filename_no_ext
+
+                self.scumm_vm.create_lookup_file(full_filename_path, scumm_vm_info)
+
         elif self.platform in USES_ARCADE_DB:
             game_no_intro = {}
             filename_no_ext = Path(filename).stem
@@ -218,6 +238,7 @@ class RomProcessor:
             game_name_clean = NoIntroDb.get_regular_name_from_no_intro(
                 {"@name": Path(filename).stem}
             )
+
         print(f"{game_name_clean}\t|\t{game_title}")
 
         # Get Games DB entry

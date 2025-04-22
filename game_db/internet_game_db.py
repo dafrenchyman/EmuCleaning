@@ -39,6 +39,7 @@ PLATFORM_TO_WHERE_CAUSE = {
     "ios": 'where name = ("iOS");',
     "mastersystem": 'where name = ("Sega Master System/Mark III");',
     "model2": 'where name = ("Arcade");',
+    "model3": 'where name = ("Arcade");',
     "megacd": 'where name = ("Sega CD");',
     "n3ds": 'where name = ("Nintendo 3DS");',
     "n64": 'where name = ("Nintendo 64");',
@@ -60,6 +61,7 @@ PLATFORM_TO_WHERE_CAUSE = {
     "psx": 'where name = ("PlayStation");',
     "psvita": 'where name = ("PlayStation Vita");',
     "saturn": 'where name = ("Sega Saturn");',
+    "scummvm": 'where name = ("PC (Microsoft Windows)");',
     "sega32x": 'where name = ("Sega 32X");',
     "segacd": 'where name = ("Sega CD");',
     "segapico": 'where name = ("Sega Pico")',
@@ -205,6 +207,10 @@ class InternetGameDb:
     def get_game_from_game_name(self, game_name: str):
         # game_name = game_name.replace("\'", "")
         platform_str = ",".join([str(i) for i in self.platform_id])
+
+        # Replace double quotes with single quotes
+        game_name = game_name.replace('"', "'")
+
         games = self.run_request(
             endpoint="games",
             query=f'search "{game_name}"; fields *; where platforms = ({platform_str});',
