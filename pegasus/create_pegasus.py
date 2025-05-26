@@ -7,6 +7,7 @@ from pathlib import Path
 
 from game_db.arcade_db import ArcadeDb
 from game_db.internet_game_db import InternetGameDb
+from game_db.launchbox_db import LaunchBoxDB
 from game_db.no_intro_db import NoIntroDb
 from game_db.scummvm_db import ScummVmDB
 from game_db.steam_grid_db import SteamGridDb
@@ -147,6 +148,9 @@ class RomProcessor:
         if platform in (USES_ARCADE_DB):
             self.arcade_db = ArcadeDb()
 
+        # Setup LaunchBoxDB
+        self.launch_box_db = LaunchBoxDB(platform)
+
         self.internet_game_db = InternetGameDb(platform)
         self.the_game_db = TheGamesDbSqlite(platform)
         self.steam_grid_db = SteamGridDb(platform)
@@ -254,6 +258,9 @@ class RomProcessor:
         # Get Steam Grid DB ID
         steam_grid_id = self.steam_grid_db.get_game_id_by_name(game_name_clean)
 
+        # Get launch box DB game_id
+        launch_box_game = self.launch_box_db.get_game_by_name(game_name_clean)
+
         assets = {
             "banner": [],
             "boxart_back": [],
@@ -288,8 +295,19 @@ class RomProcessor:
                 art_path_root=ARTWORK_FOLDER_PATH,
             )
 
+            # launchbox
+            launchbox_assets = self.launch_box_db.download_all_art(
+                launchbox_game=launch_box_game,
+                filename=filename,
+                art_path_root=ARTWORK_FOLDER_PATH,
+            )
+
             all_assets = dict_merge(
-                assets, local_assets, game_db_assets, steam_grid_assets
+                assets,
+                local_assets,
+                game_db_assets,
+                steam_grid_assets,
+                launchbox_assets,
             )
 
             # create xml string from game_db

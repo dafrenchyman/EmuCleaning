@@ -1,7 +1,12 @@
 fuzzywuzzy
 igdb-api-v4
 lxml
+musicbrainzngs
+mutagen
 pandas
+pyacoustid
+pycdlib
+pydub
 pymysql
 pysqlite3
 python-Levenshtein
